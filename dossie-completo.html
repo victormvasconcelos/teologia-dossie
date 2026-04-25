@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dossiê Definitivo — Da Criação ao Apocalipse</title>
+<style>
+/* =============================================
+   RESET & BASE
+   ============================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:         #0a0a12;
+  --bg2:        #0f0f1a;
+  --bg3:        #141422;
+  --card:       #12121e;
+  --card-hover: #17172a;
+  --border:     rgba(255,255,255,0.07);
+  --border2:    rgba(255,255,255,0.12);
+  --gold:       #c9a840;
+  --gold-light: #e8c96a;
+  --gold-dim:   rgba(201,168,64,0.15);
+  --text:       #e2ddd0;
+  --text2:      #9a9380;
+  --text3:      #5a5548;
+
+  --p1: #7c3aed; --p1-dim: rgba(124,58,237,0.15);
+  --p2: #2563eb; --p2-dim: rgba(37,99,235,0.15);
+  --p3: #0d9488; --p3-dim: rgba(13,148,136,0.15);
+  --p4: #059669; --p4-dim: rgba(5,150,105,0.15);
+  --p5: #dc2626; --p5-dim: rgba(220,38,38,0.15);
+  --p6: #d97706; --p6-dim: rgba(217,119,6,0.15);
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: 0.25s ease;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,64,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 20% 50%, rgba(124,58,237,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 80% at 80% 50%, rgba(37,99,235,0.05) 0%, transparent 50%),
+    var(--bg);
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(255,255,255,0.012) 80px, rgba(255,255,255,0.012) 81px),
+    repeating-linear-gradient(90deg, transparent, transparent 80px, rgba(255,255,255,0.012) 80px, rgba(255,255,255,0.012) 81px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 760px;
+  padding: 40px 24px;
+}
+
+.hero-eyebrow {
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.hero-title span { color: var(--gold); font-style: italic; }
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text2);
+  margin-bottom: 48px;
+  font-style: italic;
+}
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
+  padding: 24px 32px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  backdrop-filter: blur(8px);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.stat { display: flex; flex-direction: column; align-items: center; padding: 0 24px; }
+.stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); font-family: 'Courier New', monospace; line-height: 1; }
+.stat-label { font-size: 0.7rem; color: var(--text3); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; }
+.stat-divider { width: 1px; height: 40px; background: var(--border2); }
+
+.hero-cta {
+  display: inline-block;
+  padding: 14px 36px;
+  background: var(--gold);
+  color: #0a0a12;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  transition: all var(--transition);
+}
+
+.hero-cta:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(201,168,64,0.3); }
+
+.scroll-indicator { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); }
+.scroll-indicator span { display: block; width: 24px; height: 40px; border: 2px solid rgba(255,255,255,0.2); border-radius: 12px; position: relative; }
+.scroll-indicator span::after { content: ''; position: absolute; top: 6px; left: 50%; transform: translateX(-50%); width: 4px; height: 8px; background: var(--gold); border-radius: 2px; animation: scroll-bounce 2s ease infinite; }
+@keyframes scroll-bounce { 0%, 100% { top: 6px; opacity: 1; } 50% { top: 18px; opacity: 0.3; } }
+
+/* PHASES NAV */
+.phases-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,18,0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+.phases-nav-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  display: flex; gap: 4px; overflow-x: auto;
+  scrollbar-width: none; -ms-overflow-style: none;
+}
+.phases-nav-inner::-webkit-scrollbar { display: none; }
+
+.phase-btn {
+  padding: 16px 20px; background: none; border: none;
+  color: var(--text2); cursor: pointer;
+  font-family: 'Georgia', serif; font-size: 0.9rem;
+  white-space: nowrap; border-bottom: 2px solid transparent;
+  transition: all var(--transition);
+  display: flex; align-items: center; gap: 8px;
+}
+.phase-btn:hover { color: var(--text); }
+.phase-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+.phase-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+/* PHASES OVERVIEW */
+.phases-overview { padding: 80px 0 40px; }
+
+.phases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.phase-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 28px;
+  cursor: pointer; transition: all var(--transition);
+  position: relative; overflow: hidden;
+}
+.phase-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--phase-color, var(--gold));
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.phase-card:hover { border-color: var(--border2); background: var(--card-hover); transform: translateY(-2px); }
+
+.phase-card-header { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+.phase-num {
+  font-family: 'Courier New', monospace; font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--phase-color, var(--gold));
+  background: var(--phase-dim, var(--gold-dim)); padding: 4px 10px; border-radius: 4px; white-space: nowrap;
+}
+.phase-card-title { font-size: 1.05rem; color: var(--text); font-weight: 400; line-height: 1.3; }
+.phase-card-books { font-size: 0.75rem; color: var(--text3); font-family: 'Courier New', monospace; margin-bottom: 12px; letter-spacing: 0.05em; }
+.phase-card-count { font-size: 0.8rem; color: var(--text2); }
+.phase-card-count strong { color: var(--phase-color, var(--gold)); }
+
+/* SECTION HEADERS */
+.section-header { text-align: center; margin-bottom: 56px; }
+.section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 400; color: var(--text); margin-bottom: 12px; }
+.section-subtitle { font-size: 1rem; color: var(--text2); font-style: italic; }
+.gold { color: var(--gold); }
+
+/* EVIDENCE CARDS */
+.evidences-section { padding: 60px 0 80px; }
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.ev-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 24px;
+  cursor: pointer; transition: all var(--transition);
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.ev-card::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, var(--phase-dim, transparent), transparent);
+  opacity: 0; transition: opacity var(--transition);
+}
+.ev-card:hover { border-color: var(--border2); background: var(--card-hover); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
+.ev-card:hover::after { opacity: 1; }
+
+.ev-card-top { display: flex; align-items: center; gap: 10px; }
+.ev-number {
+  font-family: 'Courier New', monospace; font-size: 0.65rem; font-weight: 700;
+  color: var(--phase-color, var(--gold)); background: var(--phase-dim, var(--gold-dim));
+  padding: 3px 8px; border-radius: 4px; letter-spacing: 0.1em; white-space: nowrap;
+}
+.ev-category-badge {
+  font-family: 'Courier New', monospace; font-size: 0.6rem;
+  color: var(--text3); text-transform: uppercase; letter-spacing: 0.08em;
+  padding: 2px 7px; border: 1px solid var(--border); border-radius: 3px;
+}
+.ev-card-title { font-size: 1rem; color: var(--text); font-weight: 400; line-height: 1.35; }
+.ev-card-ref { font-family: 'Courier New', monospace; font-size: 0.7rem; color: var(--text3); }
+.ev-card-excerpt { font-size: 0.85rem; color: var(--text2); line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.ev-card-arrow { font-size: 0.75rem; color: var(--text3); font-family: 'Courier New', monospace; margin-top: auto; transition: color var(--transition), transform var(--transition); display: flex; align-items: center; gap: 6px; }
+.ev-card:hover .ev-card-arrow { color: var(--phase-color, var(--gold)); transform: translateX(4px); }
+.ev-card.hidden { display: none; }
+
+/* GLOSSARY */
+.glossary-section { padding: 60px 0 80px; background: linear-gradient(180deg, transparent, rgba(201,168,64,0.02), transparent); }
+
+.glossary-tabs { display: flex; gap: 8px; justify-content: center; margin-bottom: 48px; }
+.glos-tab {
+  padding: 10px 28px; background: none; border: 1px solid var(--border2);
+  color: var(--text2); border-radius: var(--radius-sm);
+  cursor: pointer; font-family: 'Georgia', serif; font-size: 0.9rem; transition: all var(--transition);
+}
+.glos-tab.active { background: var(--gold-dim); border-color: var(--gold); color: var(--gold); }
+.glos-tab:hover:not(.active) { border-color: var(--border2); color: var(--text); }
+
+.glossary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.glos-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; transition: all var(--transition); display: none; }
+.glos-card.visible { display: block; }
+.glos-card:hover { border-color: var(--border2); transform: translateY(-2px); }
+.glos-original { font-size: 2rem; color: var(--gold); font-family: serif; line-height: 1; margin-bottom: 8px; }
+.glos-transliteration { font-family: 'Courier New', monospace; font-size: 0.75rem; color: var(--text3); letter-spacing: 0.1em; margin-bottom: 4px; }
+.glos-term { font-size: 1rem; color: var(--text); margin-bottom: 12px; font-style: italic; }
+.glos-meaning { font-size: 0.85rem; color: var(--text2); line-height: 1.6; margin-bottom: 16px; }
+.glos-appears { font-family: 'Courier New', monospace; font-size: 0.65rem; color: var(--text3); letter-spacing: 0.05em; border-top: 1px solid var(--border); padding-top: 12px; margin-top: 4px; }
+
+/* CHIASM */
+.chiasm-section { padding: 60px 0 80px; }
+
+.chiasm-visual { display: grid; grid-template-columns: 1fr auto 1fr; gap: 32px; align-items: start; margin-top: 16px; }
+.chiasm-side h3 { font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text3); font-family: 'Courier New', monospace; margin-bottom: 20px; text-align: center; }
+.chiasm-items { display: flex; flex-direction: column; gap: 8px; }
+.chiasm-item { padding: 14px 18px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 0.85rem; color: var(--text2); line-height: 1.4; position: relative; transition: all var(--transition); }
+.chiasm-item:hover { border-color: var(--gold); color: var(--text); background: var(--gold-dim); }
+.chiasm-item .item-label { font-family: 'Courier New', monospace; font-size: 0.65rem; color: var(--text3); margin-bottom: 4px; display: block; letter-spacing: 0.1em; text-transform: uppercase; }
+.chiasm-item.mirror { border-color: rgba(201,168,64,0.2); color: var(--text); }
+.chiasm-center { display: flex; flex-direction: column; align-items: center; gap: 12px; padding-top: 32px; position: sticky; top: 80px; }
+.chiasm-x { font-size: 3rem; color: var(--gold); opacity: 0.6; font-family: 'Courier New', monospace; line-height: 1; }
+.chiasm-label { font-size: 0.7rem; text-align: center; color: var(--text3); letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.5; }
+
+/* MODAL */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); z-index: 1000; display: none; align-items: center; justify-content: center; padding: 24px; }
+.modal-overlay.open { display: flex; }
+.modal { background: var(--bg2); border: 1px solid var(--border2); border-radius: 16px; max-width: 720px; width: 100%; max-height: 85vh; overflow-y: auto; position: relative; scrollbar-width: thin; scrollbar-color: var(--border2) transparent; }
+.modal::-webkit-scrollbar { width: 6px; }
+.modal::-webkit-scrollbar-track { background: transparent; }
+.modal::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+.modal-close { position: sticky; top: 20px; float: right; margin: 20px 20px 0 0; background: rgba(255,255,255,0.08); border: none; color: var(--text2); width: 36px; height: 36px; border-radius: 50%; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; z-index: 1; transition: all var(--transition); }
+.modal-close:hover { background: rgba(255,255,255,0.15); color: var(--text); }
+.modal-content { padding: 32px 40px 40px; clear: both; }
+.modal-phase-label { font-family: 'Courier New', monospace; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+.modal-num { font-family: 'Courier New', monospace; font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; }
+.modal-title { font-size: clamp(1.4rem, 3vw, 1.8rem); color: var(--text); font-weight: 400; margin-bottom: 8px; line-height: 1.3; }
+.modal-refs { font-family: 'Courier New', monospace; font-size: 0.75rem; color: var(--text3); margin-bottom: 28px; letter-spacing: 0.05em; }
+.modal-divider { height: 1px; background: var(--border); margin: 24px 0; }
+.modal-block { margin-bottom: 24px; }
+.modal-block-label { font-family: 'Courier New', monospace; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; display: block; }
+.modal-fact { font-size: 1rem; color: var(--text); line-height: 1.7; font-style: italic; }
+.modal-logic { font-size: 0.95rem; color: var(--text2); line-height: 1.8; }
+.modal-logic strong { color: var(--text); }
+.modal-category { display: inline-block; font-family: 'Courier New', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 10px; border: 1px solid var(--border2); border-radius: 4px; color: var(--text3); margin-bottom: 20px; }
+.modal-related { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); }
+.modal-related-label { font-family: 'Courier New', monospace; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text3); margin-bottom: 12px; display: block; }
+.modal-related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.related-chip { font-size: 0.78rem; color: var(--text2); background: var(--card); border: 1px solid var(--border); padding: 4px 12px; border-radius: 20px; cursor: pointer; transition: all var(--transition); font-family: 'Georgia', serif; }
+.related-chip:hover { border-color: var(--gold); color: var(--gold); background: var(--gold-dim); }
+
+/* FOOTER */
+.footer { border-top: 1px solid var(--border); padding: 60px 0; text-align: center; }
+.footer-inner { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.footer-logo { font-size: 2.5rem; letter-spacing: 0.1em; }
+.footer-alef { color: var(--gold); opacity: 0.9; }
+.footer-tav { color: var(--gold); opacity: 0.4; }
+.footer-text { color: var(--text2); font-style: italic; font-size: 0.95rem; line-height: 1.8; }
+.footer-text em { color: var(--text3); font-size: 0.85rem; }
+.footer-phases { display: flex; gap: 12px; font-family: 'Courier New', monospace; font-size: 0.7rem; color: var(--text3); letter-spacing: 0.08em; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-stats { padding: 16px; gap: 4px; }
+  .stat { padding: 0 12px; }
+  .stat-num { font-size: 1.5rem; }
+  .stat-divider { height: 30px; }
+  .chiasm-visual { grid-template-columns: 1fr; gap: 24px; }
+  .chiasm-center { order: -1; padding-top: 0; position: static; flex-direction: row; justify-content: center; }
+  .modal-content { padding: 24px; }
+  .phases-grid { grid-template-columns: 1fr; }
+}
+
+/* ANIMATIONS */
+@keyframes fade-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.ev-card { animation: fade-up 0.4s ease forwards; opacity: 0; }
+.ev-card:nth-child(1)  { animation-delay: 0.02s; }
+.ev-card:nth-child(2)  { animation-delay: 0.04s; }
+.ev-card:nth-child(3)  { animation-delay: 0.06s; }
+.ev-card:nth-child(4)  { animation-delay: 0.08s; }
+.ev-card:nth-child(5)  { animation-delay: 0.10s; }
+.ev-card:nth-child(6)  { animation-delay: 0.12s; }
+.ev-card:nth-child(7)  { animation-delay: 0.14s; }
+.ev-card:nth-child(8)  { animation-delay: 0.16s; }
+.ev-card:nth-child(9)  { animation-delay: 0.18s; }
+.ev-card:nth-child(10) { animation-delay: 0.20s; }
+.ev-card:nth-child(n+11) { animation-delay: 0.22s; }
+</style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Arquitetura da Escritura</p>
+      <h1 class="hero-title">Dossiê Definitivo<br><span>Integrado</span></h1>
+      <p class="hero-subtitle">Da Criação ao Apocalipse — 26 Evidências em 6 Fases</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">26</span><span class="stat-label">Evidências</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">6</span><span class="stat-label">Fases</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Idiomas</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">1.500</span><span class="stat-label">Anos de escrita</span></div>
+      </div>
+      <a href="#fases" class="hero-cta">Explorar o Dossiê</a>
+    </div>
+    <div class="scroll-indicator"><span></span></div>
+  </header>
+
+  <!-- PHASES NAV -->
+  <nav class="phases-nav" id="fases-nav">
+    <div class="phases-nav-inner">
+      <button class="phase-btn active" data-phase="all">Todas</button>
+      <button class="phase-btn" data-phase="1"><span class="phase-dot" style="background:#7c3aed"></span>Fase 1</button>
+      <button class="phase-btn" data-phase="2"><span class="phase-dot" style="background:#2563eb"></span>Fase 2</button>
+      <button class="phase-btn" data-phase="3"><span class="phase-dot" style="background:#0d9488"></span>Fase 3</button>
+      <button class="phase-btn" data-phase="4"><span class="phase-dot" style="background:#059669"></span>Fase 4</button>
+      <button class="phase-btn" data-phase="5"><span class="phase-dot" style="background:#dc2626"></span>Fase 5</button>
+      <button class="phase-btn" data-phase="6"><span class="phase-dot" style="background:#d97706"></span>Fase 6</button>
+    </div>
+  </nav>
+
+  <!-- PHASES OVERVIEW -->
+  <section class="phases-overview" id="fases">
+    <div class="container">
+      <div class="phases-grid" id="phases-grid"></div>
+    </div>
+  </section>
+
+  <!-- EVIDENCE CARDS -->
+  <section class="evidences-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">As <span class="gold">26 Evidências</span></h2>
+        <p class="section-subtitle">Clique em qualquer card para ver o argumento completo</p>
+      </div>
+      <div class="cards-grid" id="cards-grid"></div>
+    </div>
+  </section>
+
+  <!-- GLOSSARY -->
+  <section class="glossary-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Termos <span class="gold">Originais</span></h2>
+        <p class="section-subtitle">Hebraico e Grego Koiné — os termos que as traduções não capturam</p>
+      </div>
+      <div class="glossary-tabs">
+        <button class="glos-tab active" data-lang="hebraico">Hebraico</button>
+        <button class="glos-tab" data-lang="grego">Grego Koiné</button>
+      </div>
+      <div class="glossary-grid" id="glossary-grid"></div>
+    </div>
+  </section>
+
+  <!-- QUIASMO -->
+  <section class="chiasm-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">O <span class="gold">Quiasmo Cósmico</span></h2>
+        <p class="section-subtitle">Gênesis e Apocalipse como espelho matemático</p>
+      </div>
+      <div class="chiasm-visual">
+        <div class="chiasm-side left">
+          <h3>Gênesis 1–3</h3>
+          <div class="chiasm-items left-items" id="chiasm-left"></div>
+        </div>
+        <div class="chiasm-center">
+          <div class="chiasm-x">✕</div>
+          <div class="chiasm-label">A Cruz<br>no Centro</div>
+        </div>
+        <div class="chiasm-side right">
+          <h3>Apocalipse 20–22</h3>
+          <div class="chiasm-items right-items" id="chiasm-right"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="footer-alef">א</span>
+          <span class="footer-tav">ת</span>
+        </div>
+        <p class="footer-text">
+          "Eu sou o Alfa e o Ômega, o princípio e o fim."<br>
+          <em>Apocalipse 1:8</em>
+        </p>
+        <div class="footer-phases">
+          <span>6 Fases</span><span>·</span>
+          <span>26 Evidências</span><span>·</span>
+          <span>Da Criação ao Apocalipse</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+const PHASES = [
+  { id:1, title:'O Código Fonte e os Patriarcas', books:'Gênesis', color:'#7c3aed', dim:'rgba(124,58,237,0.15)', count:5, label:'FASE 1', desc:'Gênesis não é apenas o começo da história — é o repositório do código-fonte que o resto da Escritura executa.' },
+  { id:2, title:'A Engenharia do Tabernáculo e a Lei', books:'Êxodo · Números · Levítico', color:'#2563eb', dim:'rgba(37,99,235,0.15)', count:4, label:'FASE 2', desc:'A Lei não é um obstáculo ao Evangelho — é o Evangelho em linguagem de código executável.' },
+  { id:3, title:'Os Salmos e os Profetas', books:'Salmos · Miqueias · Isaías · Daniel', color:'#0d9488', dim:'rgba(13,148,136,0.15)', count:5, label:'FASE 3', desc:'Os profetas não adivinharam — receberam especificações técnicas de uma execução que ocorreria séculos depois.' },
+  { id:4, title:'O Ministério Clínico e o Grego Koiné', books:'Lucas', color:'#059669', dim:'rgba(5,150,105,0.15)', count:4, label:'FASE 4', desc:'Lucas é um perito forense que documenta os milagres com vocabulário clínico preciso que outros autores não possuíam.' },
+  { id:5, title:'A Execução Histórica', books:'Lucas · Mateus · Qumran', color:'#dc2626', dim:'rgba(220,38,38,0.15)', count:5, label:'FASE 5', desc:'A crucificação não foi apenas um evento religioso — foi um evento astronômico, médico, jurídico e histórico atestado por fontes pagãs.' },
+  { id:6, title:'A Escatologia e a Macroestrutura', books:'Levítico · Apocalipse · Gênesis', color:'#d97706', dim:'rgba(217,119,6,0.15)', count:3, label:'FASE 6', desc:'Se as Festas de Primavera foram cumpridas com precisão de relógio, as Festas de Outono são o roteiro do que está por vir.' },
+];
+
+const EVIDENCES = [
+  { id:1, phase:1, num:'01', title:'A Assinatura do Criador', ref:'Gênesis 1:1 · Apocalipse 1:8', category:'Filológico · Engenharia Gramatical', excerpt:'A partícula intraduzível Alef-Tav (את) no primeiro verso da criação — e sua tradução para o grego em Apocalipse: "Eu sou o Alfa e o Ômega".', fact:'O uso da partícula intraduzível Alef-Tav (את) no primeiro verso da criação.', logic:'No hebraico original, essa partícula atua como o <strong>"objeto direto"</strong> da ação criadora de Deus. É a primeira e última letra do alfabeto hebraico — Alef e Tav. Milênios depois, Jesus traduz esse exato conceito gramatical hebraico para o grego em Apocalipse, declarando ser o <strong>"Alfa e o Ômega"</strong>. A gramática do Antigo Testamento preparou a ontologia cristã: Cristo é a "Palavra" invisível pela qual tudo foi feito.', related:[25,26] },
+  { id:2, phase:1, num:'02', title:'A Semente da Mulher', ref:'Gênesis 3:15', category:'Lógica de Alto Nível', excerpt:'Biologicamente, "semente" é sempre paterna. O paradoxo "semente da mulher" estabelece o precedente lógico milenar para o nascimento virginal.', fact:'A profecia de que a "semente da mulher" esmagaria a serpente.', logic:'Em toda a biologia antiga e moderna, a linhagem (semente) é contada pelo lado paterno. Usar o paradoxo <strong>"semente da mulher"</strong> é biologicamente anômalo e gramaticalmente intencional — a palavra hebraica <em>zera</em> (זֶרַע) é a mesma usada para descendência masculina. Isso estabelece o <strong>precedente lógico milenar</strong> para o nascimento virginal: o único mecanismo biológico possível para "semente sem pai" é concepção sem DNA paterno humano.', related:[12] },
+  { id:3, phase:1, num:'03', title:'A Anomalia de Melquisedeque', ref:'Gênesis 14 · Salmo 110:4 · Hebreus 7', category:'Engenharia Literária', excerpt:'O "Rei da Paz e da Justiça" abençoa Abraão com pão e vinho — sem nascimento, sem morte registrada. Base jurídica para o sacerdócio eterno do Messias.', fact:'O "Rei da Paz e da Justiça" que abençoa Abraão com pão e vinho, sem genealogia registrada.', logic:'No sistema teocrático israelita, o sacerdócio era <strong>hereditário e documentado</strong> — sem certidão de nascimento, sem sacerdócio. O texto de Gênesis 14 <strong>propositalmente omite</strong> o nascimento e a morte de Melquisedeque — uma engenharia jurídica intencional que cria a base legal para um sacerdócio eterno, fora da linhagem levítica. Salmo 110:4: <em>"Tu és sacerdote para sempre, segundo a ordem de Melquisedeque."</em>', related:[7] },
+  { id:4, phase:1, num:'04', title:'A Geometria de Moriá', ref:'Gênesis 22 · 2 Crônicas 3:1', category:'Tipologia Narrativa', excerpt:'O sacrifício de Isaque: mesmo sistema de montanhas do Gólgota, filho carregando a madeira, carneiro coroado por espinhos. Cinco pontos de alinhamento exato.', fact:'O sacrifício de Isaque, o filho único, no Monte Moriá.', logic:'O alinhamento tipológico é exato em <strong>cinco pontos</strong>: (1) Ocorre no mesmo sistema de montanhas do Gólgota — 2 Crônicas 3:1 confirma que Salomão construiu o Templo no Monte Moriá; (2) O filho carrega a <strong>madeira nas próprias costas</strong>; (3) A substituição ocorre por um carneiro <strong>preso por espinhos na cabeça</strong>; (4) É o filho único amado; (5) O pai recebe de volta o filho "como dos mortos" — Hebreus 11:19.', related:[5,8,10] },
+  { id:5, phase:1, num:'05', title:'A Trajetória de José', ref:'Gênesis 37–50', category:'Tipologia Narrativa', excerpt:'Traído por prata por ideia de "Judá", desce à sepultura figurativa, ressurge como governador, salva os gentios. A segunda visita resolve o reconhecimento.', fact:'José traído pelos irmãos por prata, descendo à sepultura e exaltado como governador.', logic:'O arco biográfico espelha o Messias: traído por <strong>prata por ideia de "Judá"</strong> (Judas é a forma grega de Judá); desce ao poço — sepultura figurativa; "ressurge" ao governo; <strong>torna-se salvador dos gentios primeiro</strong>. O padrão da segunda visita é decisivo: na primeira, José não se revela; na <strong>segunda visita, se revela com choro</strong>. Israel não reconheceu o Messias na primeira vinda — o reconhecimento ocorrerá na segunda (Zacarias 12:10).', related:[4,13] },
+  { id:6, phase:2, num:'06', title:'A Topografia da Cruz', ref:'Êxodo 25 · Números 1–2', category:'Certeza Absoluta — Matemático', excerpt:'Os números literais do censo de Números formam uma cruz romana perfeita visto de cima — mais de mil anos antes de Roma inventar a crucificação.', fact:'As coordenadas de acampamento das 12 tribos ao redor do Tabernáculo.', logic:'Usando os números literais do censo: Norte (157.600) ≈ Sul (151.450) → <strong>braços horizontais iguais</strong>. Oeste (108.100) → haste curta. Leste — Judá + Issacar + Zebulom (186.400) → <strong>haste longa</strong>. Visto de cima, o acampamento desenhava uma <strong>cruz romana perfeita no deserto</strong>, mais de mil anos antes de Roma desenvolver esse método de execução.', related:[7,8] },
+  { id:7, phase:2, num:'07', title:'A Cronometria das Festas de Primavera', ref:'Levítico 23 · João 19:14 · Atos 2:1', category:'Certeza Absoluta — Histórico / Astronômico', excerpt:'Quatro festas, quatro cumprimentos com precisão de relógio lunar: morte na hora do Cordeiro, sepultura nos Pães Asmos, ressurreição nas Primícias, Espírito no Pentecostes.', fact:'Os quatro "ensaios" de primavera: Páscoa, Pães Asmos, Primícias e Pentecostes.', logic:'A vida de Jesus não apenas cumpriu o significado espiritual — <strong>bateu com o relógio lunar absoluto</strong>: Morto na <strong>hora exata do abate do Cordeiro Pascal</strong> (14 de Nisã, 15h); sepultado no dia dos Pães Asmos (corpo sem corrupção); ressuscitado no <strong>domingo das Primícias</strong> ("primícias dos que dormem" — 1 Co 15:20); Espírito derramado no <strong>dia exato de Pentecostes</strong> (Atos 2:1).', related:[9,21,24] },
+  { id:8, phase:2, num:'08', title:'O Paradoxo da Novilha Vermelha', ref:'Números 19 · Hebreus 13:12', category:'Teológico — Engenharia Jurídica', excerpt:'As cinzas purificam o impuro mas tornam impuro o puro — topologia perfeita da substituição. A lei exigia execução fora dos portões: o Gólgota era uma exigência legal.', fact:'O sacrifício de uma novilha vermelha queimada fora do acampamento.', logic:'A topologia perfeita da substituição: <em>purifica o impuro → impurifica o puro</em> = Cristo absorve a impureza do mundo (2 Co 5:21). A exigência geográfica é decisiva: a lei exigia execução <strong>fora dos portões da cidade</strong> — Hebreus 13:12: <em>"Jesus padeceu fora da porta."</em> O Gólgota estava fora dos muros de Jerusalém. <strong>A lei de Moisés exigiu o endereço da crucificação.</strong>', related:[4,6,23] },
+  { id:9, phase:2, num:'09', title:'A Fita Carmesim e o Talmude', ref:'Levítico 16 · Talmude Yoma 39b', category:'Certeza Absoluta — Registro Judaico Secular', excerpt:'O Talmude registra que a fita vermelha do Yom Kippur parou de ficar branca 40 anos antes de 70 d.C. — ou seja, em 30 d.C. Fonte: documentação rabínica judaica independente.', fact:'A fita vermelha do Dia da Expiação que ficava branca miraculosamente.', logic:'<strong>Talmude Babilônico, Yoma 39b:</strong> <em>"durante os últimos quarenta anos antes da destruição do Templo, a fita vermelha não ficou branca."</em> O Templo foi destruído em <strong>70 d.C.</strong> Quarenta anos antes = <strong>30 d.C.</strong> Esta não é uma fonte cristã. É o <strong>próprio Talmude judaico</strong> documentando que Deus cessou de aceitar os sacrifícios do sistema levítico exatamente no ano da crucificação.', related:[7,14,23] },
+  { id:10, phase:3, num:'10', title:'O Verme Escarlate e a Crucificação', ref:'Salmo 22 · Zacarias 12:10 · Qumran 250 a.C.', category:'Certeza Absoluta — Histórico / Filológico', excerpt:'Davi descreve a mecânica clínica de uma crucificação séculos antes desse método existir, usando a palavra hebraica de um inseto que morre num madeiro secretando escarlate para dar vida à sua prole.', fact:'A descrição de perfuração de mãos e pés e a citação do verme carmesim (Tola\'at) no Salmo 22.', logic:'Salmo 22 descreve: desconjuntamento dos ossos, sede extrema, <strong>"traspassaram as minhas mãos e os meus pés"</strong> (v.16), <strong>partilha das vestes por sorteio</strong> (v.18) — João 19:23-24 confirma o cumprimento literal. O v.6 usa <em>tola\'at</em> — o inseto escarlate que fixa-se num madeiro, morre nele, e ao morrer secreta tinta escarlate para dar vida à prole. <strong>Textos validados por Qumran (~250 a.C.)</strong>.', related:[4,19,20] },
+  { id:11, phase:3, num:'11', title:'A Etimologia da Pedra Angular', ref:'Salmo 118:22 · Mateus 21:42', category:'Teológico — Linguística Semítica', excerpt:'A palavra hebraica para "pedra" — Eben (אֶבֶן) — é a contração de Ab (Pai) e Ben (Filho). A pedra rejeitada carrega, em sua ortografia, a união Pai-Filho.', fact:'"A pedra que os construtores rejeitaram tornou-se a pedra angular."', logic:'<strong>אֶבֶן (Eben)</strong> = Pedra. Decomposta: <strong>אָב (Ab)</strong> = Pai + <strong>בֵּן (Ben)</strong> = Filho. A palavra hebraica para pedra fundamental contém, em sua <strong>própria raiz ortográfica</strong>, a união intrínseca entre o Pai e o Filho. Quando Jesus cita o Salmo 118:22 e se aplica a si mesmo, ele afirma: <em>"Eu sou aquele que os construtores rejeitaram — e meu nome carrega a relação Pai-Filho na sua estrutura mais básica."</em>', related:[1] },
+  { id:12, phase:3, num:'12', title:'O Endereço e o Nascimento', ref:'Miqueias 5:2 · Isaías 7:14 · Septuaginta 250 a.C.', category:'Certeza Absoluta — Arqueológico / Geográfico', excerpt:'Miqueias crava o CEP: Belém Efrata. A Septuaginta (250 a.C.), traduzida por rabinos judeus pré-cristãos, usa Parthenos — virgem intacta sem ambiguidade.', fact:'Miqueias especifica Belém Efrata. Isaías profetiza o nascimento virginal.', logic:'Miqueias 5:2 crava <strong>Belém Efrata</strong> — CEP com bairro. Isaías 7:14 usa <em>almah</em>. O argumento decisivo: a <strong>Septuaginta (~250 a.C.)</strong> — traduzida por 70 rabinos judeus séculos antes de Cristo — traduz <em>almah</em> como <strong>παρθένος (Parthenos)</strong>: virgem intacta, sem ambiguidade. Isso prova que a expectativa do nascimento virginal era <strong>judaica e pré-cristã</strong>.', related:[2,14] },
+  { id:13, phase:3, num:'13', title:'A Sepultura Paradoxal', ref:'Isaías 53:9 · Mateus 27:57-60', category:'Certeza Absoluta — Histórico / Textual', excerpt:'Isaías prevê: morreria com criminosos, mas seria sepultado com rico. Na Roma Antiga, criminosos iam para valas comuns. A intervenção de José de Arimateia resolve o paradoxo.', fact:'O texto atesta que o Messias morreria com criminosos, mas seria sepultado com ricos.', logic:'A contradição é juridicamente impossível sem intervenção: criminosos crucificados pela Roma eram descartados em valas comuns. A intervenção de <strong>José de Arimateia</strong> — membro rico do Sinédrio, doando seu túmulo recém-escavado — resolve um paradoxo que parecia irreconciliável num texto do <strong>século VIII a.C.</strong>', related:[5,14] },
+  { id:14, phase:3, num:'14', title:'O Cronômetro das 70 Semanas', ref:'Daniel 9:24-27 · Neemias 2:1-8', category:'Certeza Absoluta — Matemático / Histórico', excerpt:'69 semanas de anos × 360 dias = 173.880 dias a partir do decreto de 445 a.C. A matemática aponta para 32 d.C. O Messias tinha que vir e morrer antes de 70 d.C.', fact:'O prazo estabelecido para o surgimento e morte do Messias.', logic:'Decreto de Artaxerxes: <strong>445 a.C.</strong> 69 semanas × 7 anos × 360 dias = <strong>173.880 dias</strong> = <strong>6 de abril de 32 d.C.</strong> — a entrada triunfal em Jerusalém. O prazo-limite: o Templo foi destruído em <strong>70 d.C.</strong> Qualquer candidato messiânico após essa data viola matematicamente o próprio texto de Daniel. O Talmude proibiu calcular as 70 semanas.', related:[7,9,12] },
+  { id:15, phase:4, num:'15', title:'A Categoria Hipocrática da Febre', ref:'Lucas 4:38 · Corpus Hippocraticum', category:'Certeza Absoluta — Filológico / Medicina Antiga', excerpt:'Mateus usa "febre" genérico. Lucas usa pyretō megalō — a classificação estrita de Hipócrates para infecção letal sistêmica. O milagre: recuperação de ATP sem convalescença.', fact:'A cura da sogra de Pedro.', logic:'Mateus 8:14 usa <em>pyressousan</em> — genérico. Lucas 4:38 usa <strong>pyretō megalō</strong> — a taxonomia clínica de Hipócrates para febre grave/sistêmica com risco de morte. O milagre biológico: a cura + <strong>ausência total de convalescença</strong> — ela se levantou e os serviu. Após febre alta sistêmica, o corpo exige dias para repor ATP celular. A normalização imediata não tem explicação fisiológica convencional.', related:[16,17,18] },
+  { id:16, phase:4, num:'16', title:'A "Catarse" Celular do Leproso', ref:'Lucas 5:12-13', category:'Certeza Absoluta — Filológico / Clínico', excerpt:'Lucas usa katharizo — erradicação absoluta + regeneração — em vez de therapeuo (tratar). Implica regeneração de cartilagem, nervo e DNA destruídos pela hanseníase severa.', fact:'A cura da lepra (hanseníase severa com necrose).', logic:'Contraste técnico: <em>therapeuo</em> = tratar. <strong>katharizo</strong> = purificar completamente, erradicar, restaurar ao estado original — raiz de <em>catarse</em>. A <em>Mycobacterium leprae</em> destrói nervos periféricos, necrosa tecido, corrói cartilagem e osso. O que Lucas atesta é a <strong>erradicação completa + regeneração integral do tecido destruído</strong> — incluindo nervo periférico (não se regenera em adultos) e cartilagem avascular.', related:[15,17,18] },
+  { id:17, phase:4, num:'17', title:'A Termodinâmica da Hemorragia', ref:'Lucas 8:43-46', category:'Certeza Absoluta — Filológico / Físico', excerpt:'Lucas registra rhysei haimatos (fluxo arterial crônico). Jesus afirma que saiu dele Dynamis — força física cinética, raiz de "dínamo". Uma transferência de energia mensurável.', fact:'A mulher com o fluxo de sangue intratável de 12 anos.', logic:'Lucas usa: <strong>rhysei haimatos</strong> — fluxo arterial crônico (diagnóstico médico); e <strong>δύναμις (dynamis)</strong> — a palavra grega para <em>força física mensurável</em>, raiz de "dínamo", "dinâmica", "dinamite". Jesus não diz "senti algo" — afirma que um quantum de <strong>energia física saiu de si</strong>. A intervenção funcionou como uma <strong>transferência física de energia</strong> para selar uma ruptura vascular de 12 anos.', related:[15,16,18] },
+  { id:18, phase:4, num:'18', title:'O Diagnóstico da Falência Múltipla', ref:'Lucas 14:2', category:'Certeza Absoluta — Diagnóstico Clínico', excerpt:'Apenas Lucas documenta este caso com o termo preciso hydropikos — hidropisia por falência cardíaca ou cirrose hepática severa. Estágio terminal de múltiplos órgãos.', fact:'A cura do homem no sábado.', logic:'Apenas Lucas usa o <strong>termo médico grego correto</strong>: <em>hydropikos</em> — Hidropisia: acúmulo massivo de fluido por insuficiência cardíaca, cirrose hepática ou insuficiência renal. Em todos os casos, estágio terminal. Um leigo diria "homem muito inchado". Um médico escreve <em>hydropikos</em>. A cura implica <strong>reestruturação anatômica simultânea de múltiplos órgãos em estágio terminal</strong>.', related:[15,16,17] },
+  { id:19, phase:5, num:'19', title:'A Fisiologia do Estresse Absoluto', ref:'Lucas 22:44', category:'Certeza Absoluta — Diagnóstico Clínico', excerpt:'Lucas usa thromboi haimatos — coágulos de sangue, não metáfora poética. A medicina moderna confirma: Hematidrose — ruptura capilar sob estresse neurológico extremo.', fact:'O suor de sangue de Jesus no Getsêmani.', logic:'Lucas não diz "suor parecido com sangue" — usa <strong>θρόμβοι αἵματος (thromboi haimatos)</strong>: coágulos de sangue saindo pelas glândulas sudoríparas. A medicina moderna confirma como <strong>Hematidrose</strong>: ruptura dos capilares sob as glândulas sudoríparas por estresse neurológico extremo. Consequência: pele hipersensibilizada, desidratação, fragilidade vascular — explica a morte em ~6 horas vs. 2-3 dias normais.', related:[4,10,20] },
+  { id:20, phase:5, num:'20', title:'A Reversão Anatômica de Malco', ref:'Lucas 22:50-51 · João 18:10', category:'Certeza Absoluta — Cirúrgico / Filológico', excerpt:'Lucas usa o termo anatômico preciso (pavilhão auricular) e o verbo iaomai — regeneração imediata de tecido. Cartilagem reconstituída, nervos religados instantaneamente na cena do arresto.', fact:'A amputação traumática da orelha do servo do sumo sacerdote.', logic:'Lucas usa: <strong>otion (ὠτίον)</strong> — pavilhão auricular específico; e <strong>iaomai (ἰάομαι)</strong> — regeneração imediata de tecido. A orelha estava amputada. Regeneração da cartilagem elástica auricular (avascular, não se regenera em adultos), reinervação e reintegração anatômica completa — <strong>instantâneos, no meio da cena do arresto</strong>. Uma cirurgia reconstrutiva moderna leva horas.', related:[15,16,19] },
+  { id:21, phase:5, num:'21', title:'A Solução do Calendário Duplo', ref:'Manuscritos do Mar Morto · João 13:1 · Marcos 14:12', category:'Certeza Absoluta — Arqueologia de Qumran', excerpt:'Os Manuscritos do Mar Morto provam dois calendários coexistindo em Israel. Jesus celebrou a Ceia no calendário essênio/galileu e morreu como Cordeiro no calendário do Templo — ambos válidos.', fact:'O aparente conflito entre a Ceia (quinta) e a Morte como Cordeiro (sexta).', logic:'A descoberta de Qumran (1947) comprovou dois calendários coexistindo: <strong>Solar (essênio/galileu)</strong> — Páscoa na terça/quarta; <strong>Lunar (farisaico/Templo)</strong> — Páscoa na sexta. Jesus celebrou a Ceia no calendário solar (100% legal para galileus) e foi sacrificado na sexta na hora do abate do Cordeiro do Templo. <strong>Jesus foi Cordeiro Pascal em ambos os calendários simultaneamente.</strong>', related:[7,22] },
+  { id:22, phase:5, num:'22', title:'O "Blackout" Astronômico', ref:'Mateus 27:45 · Talo (52 d.C.) · Flegão de Trale', category:'Certeza Absoluta — Astronômico / Secular', excerpt:'Eclipse solar é fisicamente impossível na Lua Cheia. Talo (52 d.C.) e Flegão de Trale, historiadores pagãos, documentaram e tentaram explicar o fenômeno sem agenda cristã.', fact:'A escuridão do meio-dia às 15h durante a crucificação (14 de Nisã).', logic:'Eclipse solar requer Lua Nova. O 14 de Nisã é sempre <strong>Lua Cheia</strong> — <strong>fisicamente impossível haver eclipse solar</strong>. <strong>Talo</strong> (52 d.C.) tentou explicar como eclipse — provando que reconheceu o evento; <strong>Flegão de Trale</strong> (séc. II) registrou grande escuridão na época de Tibério. Dois pagãos sem agenda cristã documentaram o fenômeno — é um <strong>evento anômalo global registrado por fontes independentes</strong>.', related:[21,23] },
+  { id:23, phase:5, num:'23', title:'O Véu e a Engenharia Física', ref:'Mateus 27:51 · Mishná Shekalim 8:5 · Josefo', category:'Certeza Absoluta — Registro Histórico Material', excerpt:'O Parokhet media 18 metros e tinha espessura da palma de uma mão. O rasgo foi de cima para baixo — direção oposta a qualquer força humana acessível.', fact:'O véu do Santo dos Santos rasga de alto a baixo na hora da morte.', logic:'Mishná + Josefo descrevem o <strong>Parokhet com 18 metros de altura e espessura de 10 cm</strong>. Josefo registra que 300 sacerdotes eram necessários para movê-lo. O rasgo <strong>de cima para baixo</strong> indica força que começou no topo — <strong>inacessível a humanos</strong>. Hebreus 10:20: o véu é a carne de Cristo — ao rasgá-lo, Deus materializou a <strong>abertura do acesso direto ao divino</strong>.', related:[8,9,22] },
+  { id:24, phase:6, num:'24', title:'As Festas de Outono', ref:'Levítico 23 · 1 Tessalonicenses 4:16 · Apocalipse 20', category:'Teológico — Matemático e Escatológico', excerpt:'As 4 festas de primavera foram cumpridas na exata data do calendário lunar. A consistência lógica exige que as 3 festas de outono sigam o mesmo relógio: Trombetas, Expiação, Tabernáculos.', fact:'O cronograma pendente de Levítico 23: Trombetas, Expiação e Tabernáculos.', logic:'<strong>Premissa</strong>: as 4 festas de primavera foram cumpridas na exata data do calendário lunar. <strong>Conclusão</strong>: as 3 festas de outono seguirão o mesmo relógio. <strong>Rosh Hashaná</strong> — Lua escondida, convocação → arrebatamento; <strong>Yom Kippur</strong> — julgamento → julgamento das nações; <strong>Sucot</strong> — Deus habitando com o povo → Reino Milenar. Zacarias 14:16 confirma: sobreviventes subirão a Jerusalém guardar Sucot.', related:[7,25,26] },
+  { id:25, phase:6, num:'25', title:'O Quiasmo Cósmico', ref:'Gênesis 1–3 · Apocalipse 20–22', category:'Certeza Absoluta — Arquitetura Macroestrutural', excerpt:'Os 3 primeiros capítulos de Gênesis e os 3 últimos de Apocalipse formam um espelho matemático: morte, maldição, serpente, Árvore — tudo introduzido no início, cirurgicamente desfeito no fim.', fact:'A Bíblia como uma estrutura espelhada rebatida.', logic:'O espelho é item a item: trevas → não haverá noite. Árvore perdida → Árvore restaurada. Serpente entra → serpente expulsa. Maldição pronunciada → maldição anulada. Morte entra → morte destruída. Éden fechado → Nova Jerusalém aberta. Uma obra com <strong>66 livros, ~40 autores, 3 idiomas e ~1.500 anos</strong> mantém <strong>simetria estrutural perfeita</strong> entre abertura e fechamento. O Apocalipse é o Gênesis sendo desfeito com precisão cirúrgica.', related:[1,26,24] },
+  { id:26, phase:6, num:'26', title:'O Leão e o Cordeiro', ref:'Apocalipse 5 · Gênesis 3:15', category:'Teológico — Conclusão Filosófica', excerpt:'Anunciado: "o Leão venceu". Exibido: "um Cordeiro como que morto". O sistema do mal não colapsa por força bruta, mas pela obediência absoluta de quem deixou o calcanhar ser ferido.', fact:'A resolução cósmica através da fragilidade.', logic:'João ouve: <em>"O Leão de Judá venceu."</em> João vê: <em>"um Cordeiro como que morto."</em> O <strong>paradoxo intencional</strong>: a vitória mais absoluta da história foi alcançada no ponto de aparente derrota máxima. Gênesis 3:15 estabeleceu a lógica: o mal é destruído não pela força bruta, mas pela <strong>obediência absoluta e sacrifício voluntário</strong> de quem suportou a ferida. O fechamento do código-fonte: o Alfa e o Ômega de Gênesis 1:1 abre o livro selado em Apocalipse 5.', related:[1,2,25] },
+];
+
+const TERMS = [
+  { lang:'hebraico', original:'את', transliteration:'Alef-Tav', term:'A Partícula do Criador', meaning:'Marcador do objeto direto hebraico — composto pela primeira (Alef) e última (Tav) letras do alfabeto. Intraduzível em qualquer língua moderna. Aparece em Gênesis 1:1 como a "assinatura invisível" da criação.', appears:'Evidência 01' },
+  { lang:'hebraico', original:'אֶבֶן', transliteration:'Eben', term:'Pedra = Pai + Filho', meaning:'A palavra hebraica para "pedra" contém em sua raiz a contração de Ab (אָב = Pai) e Ben (בֵּן = Filho). A pedra angular rejeitada pelos construtores carrega a relação ontológica Pai-Filho em sua própria estrutura ortográfica.', appears:'Evidência 11' },
+  { lang:'hebraico', original:'תּוֹלַעַת', transliteration:"Tola'at", term:'O Verme Escarlate', meaning:'Coccus ilicis — cochonilha escarlate que se fixa num madeiro, morre nele, e ao morrer secreta tinta escarlate sobre os ovos para dar vida à prole. Tipologia bioquímica do sacrifício no Calvário.', appears:'Evidência 10' },
+  { lang:'grego', original:'δύναμις', transliteration:'Dynamis', term:'Força / Energia Física', meaning:'Não é palavra espiritual abstrata — é o termo técnico grego para força física mensurável. Raiz de "dínamo", "dinâmica", "dinamite". Jesus afirma que um quantum de dynamis saiu de si para a mulher com hemorragia.', appears:'Evidência 17' },
+  { lang:'grego', original:'καθαρίζω', transliteration:'Katharizo', term:'Erradicação + Regeneração', meaning:'Raiz de "catarse" — purificação absoluta, não tratamento parcial. Lucas usa este verbo para a cura da lepra, em vez de therapeuo (tratar). Implica erradicação do agente patológico e regeneração integral do tecido ao estado original.', appears:'Evidência 16' },
+  { lang:'grego', original:'παρθένος', transliteration:'Parthenos', term:'Virgem Intacta', meaning:'Termo técnico grego para virgindade sem ambiguidade. A Septuaginta (~250 a.C.), traduzida por rabinos judeus pré-cristãos, usa Parthenos para traduzir almah em Isaías 7:14 — provando que a expectativa do nascimento virginal era judaica e pré-cristã.', appears:'Evidência 12' },
+  { lang:'grego', original:'θρόμβοι αἵματος', transliteration:'Thromboi Haimatos', term:'Hematidrose', meaning:'Coágulos/trombos de sangue — não metáfora poética. Lucas usa o laudo médico correto para hematidrose: ruptura dos capilares sob glândulas sudoríparas causada por estresse neurológico extremo. Condição médica documentada.', appears:'Evidência 19' },
+  { lang:'grego', original:'πυρετῷ μεγάλῳ', transliteration:'Pyretō Megalō', term:'Grande Febre (Hipócrates)', meaning:'Taxonomia clínica do Corpus Hippocraticum para infecção sistêmica letal. Mateus usa o termo comum; Lucas usa a classificação médica precisa. Só um médico faria essa distinção.', appears:'Evidência 15' },
+  { lang:'grego', original:'ἰάομαι', transliteration:'Iaomai', term:'Regeneração de Tecido', meaning:'Na medicina grega: regeneração imediata de tecido, não apenas alívio. Lucas usa este verbo para a reconstrução da orelha amputada de Malco — cartilagem, nervos e vasos regenerados instantaneamente.', appears:'Evidência 20' },
+  { lang:'grego', original:'ὑδρωπικός', transliteration:'Hydropikos', term:'Hidropisia', meaning:'Acúmulo massivo de fluido por insuficiência cardíaca, cirrose hepática ou falência renal — estágio terminal. Apenas Lucas usa este diagnóstico diferencial preciso.', appears:'Evidência 18' },
+];
+
+const CHIASM_PAIRS = [
+  { gen:'Criação dos céus e da terra', apo:'Nova Criação — céus e terra novos' },
+  { gen:'Trevas sobre o abismo', apo:'Não haverá mais noite' },
+  { gen:'Sol e lua criados para governar', apo:'O Cordeiro é a luz eterna' },
+  { gen:'Árvore da Vida — acesso perdido', apo:'Árvore da Vida — acesso restaurado' },
+  { gen:'A serpente entra', apo:'A serpente lançada no lago de fogo' },
+  { gen:'Maldição pronunciada', apo:'Não haverá mais maldição' },
+  { gen:'Morte entra no mundo', apo:'A morte é destruída para sempre' },
+  { gen:'Éden fechado — querubins guardam', apo:'Nova Jerusalém — portões nunca fechados' },
+];
+
+function getPhaseColor(id) { return (PHASES.find(p=>p.id===id)||{}).color||'#c9a840'; }
+function getPhaseDim(id)   { return (PHASES.find(p=>p.id===id)||{}).dim||'rgba(201,168,64,0.15)'; }
+
+function renderPhases() {
+  document.getElementById('phases-grid').innerHTML = PHASES.map(p=>`
+    <div class="phase-card" style="--phase-color:${p.color};--phase-dim:${p.dim}" data-phase="${p.id}">
+      <div class="phase-card-header">
+        <span class="phase-num">${p.label}</span>
+        <h3 class="phase-card-title">${p.title}</h3>
+      </div>
+      <p class="phase-card-books">${p.books}</p>
+      <p class="phase-card-count"><strong>${p.count}</strong> evidências</p>
+    </div>`).join('');
+  document.querySelectorAll('.phase-card').forEach(c=>{
+    c.addEventListener('click',()=>{ filterByPhase(c.dataset.phase); document.querySelector('.evidences-section').scrollIntoView({behavior:'smooth'}); });
+  });
+}
+
+function renderCards() {
+  document.getElementById('cards-grid').innerHTML = EVIDENCES.map(ev=>`
+    <div class="ev-card" data-phase="${ev.phase}" data-id="${ev.id}"
+         style="--phase-color:${getPhaseColor(ev.phase)};--phase-dim:${getPhaseDim(ev.phase)}">
+      <div class="ev-card-top">
+        <span class="ev-number">${ev.num}</span>
+        <span class="ev-category-badge">${ev.category.split('—')[0].trim()}</span>
+      </div>
+      <h3 class="ev-card-title">${ev.title}</h3>
+      <p class="ev-card-ref">${ev.ref}</p>
+      <p class="ev-card-excerpt">${ev.excerpt}</p>
+      <span class="ev-card-arrow">Ver argumento completo →</span>
+    </div>`).join('');
+  document.querySelectorAll('.ev-card').forEach(c=>{
+    c.addEventListener('click',()=>openModal(Number(c.dataset.id)));
+  });
+}
+
+function filterByPhase(phase) {
+  document.querySelectorAll('.phase-btn').forEach(b=>b.classList.toggle('active',b.dataset.phase===phase));
+  document.querySelectorAll('.ev-card').forEach(c=>{
+    c.classList.toggle('hidden', phase!=='all' && c.dataset.phase!==phase);
+  });
+}
+
+function openModal(id) {
+  const ev = EVIDENCES.find(e=>e.id===id); if(!ev) return;
+  const phase = PHASES.find(p=>p.id===ev.phase);
+  const color = getPhaseColor(ev.phase), dim = getPhaseDim(ev.phase);
+  const relHtml = ev.related.map(rid=>{
+    const r=EVIDENCES.find(e=>e.id===rid);
+    return r?`<span class="related-chip" data-id="${r.id}"><span style="color:${getPhaseColor(r.phase)}">●</span> ${r.num} — ${r.title}</span>`:'';
+  }).join('');
+  document.getElementById('modal-content').innerHTML = `
+    <div class="modal-phase-label" style="color:${color}">
+      <span class="modal-num" style="background:${dim};color:${color}">${phase.label} · Evidência ${ev.num}</span>
+    </div>
+    <h2 class="modal-title">${ev.title}</h2>
+    <p class="modal-refs">${ev.ref}</p>
+    <span class="modal-category">${ev.category}</span>
+    <div class="modal-divider"></div>
+    <div class="modal-block"><span class="modal-block-label">O Fato</span><p class="modal-fact">${ev.fact}</p></div>
+    <div class="modal-block"><span class="modal-block-label">A Lógica Racional</span><p class="modal-logic">${ev.logic}</p></div>
+    ${relHtml?`<div class="modal-related"><span class="modal-related-label">Evidências Relacionadas</span><div class="modal-related-chips">${relHtml}</div></div>`:''}`;
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow='hidden';
+  document.querySelectorAll('.related-chip').forEach(ch=>{
+    ch.addEventListener('click',()=>openModal(Number(ch.dataset.id)));
+  });
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+function renderGlossary(lang='hebraico') {
+  document.getElementById('glossary-grid').innerHTML = TERMS.map(t=>`
+    <div class="glos-card ${t.lang===lang?'visible':''}" data-lang="${t.lang}">
+      <div class="glos-original">${t.original}</div>
+      <div class="glos-transliteration">${t.transliteration}</div>
+      <div class="glos-term">${t.term}</div>
+      <div class="glos-meaning">${t.meaning}</div>
+      <div class="glos-appears">→ ${t.appears}</div>
+    </div>`).join('');
+}
+
+function renderChiasm() {
+  document.getElementById('chiasm-left').innerHTML = CHIASM_PAIRS.map((p,i)=>`
+    <div class="chiasm-item"><span class="item-label">Gênesis ${i+1}</span>${p.gen}</div>`).join('');
+  document.getElementById('chiasm-right').innerHTML = CHIASM_PAIRS.map((p,i)=>`
+    <div class="chiasm-item mirror"><span class="item-label">Apocalipse ${i+1}</span>${p.apo}</div>`).join('');
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+  renderPhases(); renderCards(); renderGlossary('hebraico'); renderChiasm();
+  document.querySelectorAll('.phase-btn').forEach(b=>b.addEventListener('click',()=>filterByPhase(b.dataset.phase)));
+  document.querySelectorAll('.glos-tab').forEach(t=>t.addEventListener('click',()=>{
+    document.querySelectorAll('.glos-tab').forEach(x=>x.classList.toggle('active',x.dataset.lang===t.dataset.lang));
+    document.querySelectorAll('.glos-card').forEach(c=>c.classList.toggle('visible',c.dataset.lang===t.dataset.lang));
+  }));
+  document.getElementById('modal-close').addEventListener('click',closeModal);
+  document.getElementById('modal-overlay').addEventListener('click',e=>{ if(e.target===document.getElementById('modal-overlay')) closeModal(); });
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeModal(); });
+});
+</script>
+</body>
+</html>
