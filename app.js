@@ -836,4 +836,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeModal();
   });
+
+  // Deep link: ?ev=18 abre a evidência diretamente
+  const evParam = new URLSearchParams(window.location.search).get('ev');
+  if (evParam) {
+    const evId = Number(evParam);
+    if (EVIDENCES.some(e => e.id === evId)) openModal(evId);
+  }
 });
