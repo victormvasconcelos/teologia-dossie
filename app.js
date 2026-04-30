@@ -866,105 +866,6 @@ function renderChiasm() {
   `).join('');
 }
 
-// =============================================
-// DASHBOARD
-// =============================================
-function renderDashboard() {
-  renderPhasesBars();
-  renderDonut();
-  renderCategories();
-  renderBooksCoverage();
-}
-
-function renderPhasesBars() {
-  const el = document.getElementById('dash-bars');
-  if (!el) return;
-  const total = EVIDENCES.length;
-  el.innerHTML = PHASES.map(p => {
-    const count = EVIDENCES.filter(e => e.phase === p.id).length;
-    const pct = (count / total * 100).toFixed(1);
-    return `
-      <div class="dash-bar-row">
-        <button class="dash-bar-label" onclick="filterByPhase('${p.id}');document.getElementById('fases-nav').scrollIntoView({behavior:'smooth'})">
-          <span class="dash-phase-dot" style="background:${p.color}"></span>${p.label}
-        </button>
-        <div class="dash-bar-track">
-          <div class="dash-bar-fill" style="width:${pct}%;background:${p.color}"></div>
-        </div>
-        <span class="dash-bar-count" style="color:${p.color}">${count}</span>
-      </div>`;
-  }).join('');
-}
-
-function renderDonut() {
-  const el = document.getElementById('dash-donut');
-  const legend = document.getElementById('dash-donut-legend');
-  if (!el || !legend) return;
-  const total = EVIDENCES.length;
-  let deg = 0;
-  const stops = PHASES.map(p => {
-    const count = EVIDENCES.filter(e => e.phase === p.id).length;
-    const angle = (count / total) * 360;
-    const start = deg;
-    deg += angle;
-    return { color: p.color, start, end: deg, count, label: p.label };
-  });
-  const gradStops = stops.map(s => `${s.color} ${s.start.toFixed(2)}deg ${s.end.toFixed(2)}deg`).join(', ');
-  el.style.background = `conic-gradient(${gradStops})`;
-  legend.innerHTML = stops.map(s => `
-    <div class="dash-legend-item">
-      <span class="dash-legend-dot" style="background:${s.color}"></span>
-      <span class="dash-legend-text">${s.label}: ${s.count}</span>
-    </div>`).join('');
-}
-
-function renderCategories() {
-  const el = document.getElementById('dash-cat-list');
-  if (!el) return;
-  const catMap = {};
-  EVIDENCES.forEach(e => {
-    const raw = e.category;
-    let key;
-    if (raw.startsWith('Certeza Absoluta')) key = 'Certeza Absoluta';
-    else if (raw.startsWith('Teológico')) key = 'Teológico';
-    else if (raw.startsWith('Tipologia')) key = 'Tipologia';
-    else if (raw.startsWith('Filológico')) key = 'Filológico';
-    else if (raw.startsWith('Engenharia')) key = 'Engenharia';
-    else if (raw.startsWith('Lógica')) key = 'Lógica';
-    else key = raw.split('—')[0].split('·')[0].trim();
-    catMap[key] = (catMap[key] || 0) + 1;
-  });
-  const sorted = Object.entries(catMap).sort((a, b) => b[1] - a[1]);
-  const max = sorted[0][1];
-  el.innerHTML = sorted.map(([cat, count]) => `
-    <div class="dash-cat-row">
-      <span class="dash-cat-name">${cat}</span>
-      <div class="dash-cat-track">
-        <div class="dash-cat-fill" style="width:${(count / max * 100).toFixed(0)}%"></div>
-      </div>
-      <span class="dash-cat-count">${count}</span>
-    </div>`).join('');
-}
-
-function renderBooksCoverage() {
-  const el = document.getElementById('dash-books-chips');
-  if (!el) return;
-  const booksSet = new Set();
-  EVIDENCES.forEach(e => {
-    e.ref.split(/[·,]/).forEach(s => {
-      const book = s.trim().split(/\s+\d/)[0].trim();
-      if (book.length > 1) booksSet.add(book);
-    });
-  });
-  PHASES.forEach(p => {
-    p.books.split('·').forEach(b => {
-      const book = b.trim().replace('(Novo)', '').trim();
-      if (book.length > 1) booksSet.add(book);
-    });
-  });
-  const books = [...booksSet].filter(b => b.length > 1 && !/^\d/.test(b)).sort();
-  el.innerHTML = books.map(b => `<span class="dash-book-chip">${b}</span>`).join('');
-}
 
 // =============================================
 // STICKY NAV
@@ -988,7 +889,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCards();
   renderGlossary('hebraico');
   renderChiasm();
-  renderDashboard();
   initStickyNav();
 
   // Phase nav buttons
