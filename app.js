@@ -662,7 +662,7 @@ const CURIOSITIES = [
     id: 1,
     title: 'O versículo mais curto da Bíblia',
     tag: 'Linguística',
-    body: 'Em grego, João 11:35 tem apenas duas palavras: <strong>ἐδάκρυσεν ὁ Ἰησοῦς</strong> — "Jesus chorou." É o versículo mais curto do Novo Testamento e um dos mais teologicamente densos: Deus encarnado chora diante da morte de um amigo, mesmo sabendo que vai ressuscitá-lo.',
+    body: 'Em grego, João 11:35 tem apenas duas palavras: <strong>ἐδάκρυσεν ὁ Ἰησοῦς</strong> — "Jesus chorou." É o versículo mais curto do NT e um dos mais teologicamente densos: Deus encarnado chora diante da morte de um amigo, mesmo sabendo que vai ressuscitá-lo.',
   },
   {
     id: 2,
@@ -678,9 +678,9 @@ const CURIOSITIES = [
   },
   {
     id: 4,
-    title: 'O Tetragrama aparece 6.828 vezes',
+    title: '666 é o código de Nero César',
     tag: 'Números',
-    body: 'O nome divino <strong>יהוה (YHWH)</strong> aparece 6.828 vezes no Antigo Testamento — mais que qualquer outro nome ou título. É tão sagrado que judeus substituem pela palavra <em>HaShem</em> ("O Nome") na leitura oral, e a pronúncia original foi intencionalmente perdida.',
+    body: 'O "número da besta" (Apocalipse 13) não é um número genérico do diabo. Em gematria hebraica, <strong>נרון קסר (Nero César)</strong> soma exatamente 666. João escrevia em código sob perseguição romana: a audiência cristã do séc. I identificava imediatamente a besta — sem precisar nomeá-la.',
   },
   {
     id: 5,
@@ -702,15 +702,15 @@ const CURIOSITIES = [
   },
   {
     id: 8,
-    title: 'O nome mais longo da Bíblia',
-    tag: 'Curiosidade',
-    body: '<strong>Maher-Shalal-Hash-Baz</strong> (Isaías 8:1) — filho do profeta Isaías, com 18 letras, significando "Rápido é o saque, veloz é o despojo." Foi dado como sinal profético da queda da Síria e Israel diante da Assíria.',
+    title: 'A Estela de Tel Dan — "Casa de Davi" em pedra',
+    tag: 'Arqueologia',
+    body: 'Descoberta em Israel em 1993, a Estela de Tel Dan (~séc. IX a.C.) contém a expressão <strong>בֵּית דָּוִד ("Casa de Davi")</strong> em aramaico antigo — a referência mais antiga fora da Bíblia ao rei Davi. Prova arqueológica de que a dinastia davídica foi historicamente real, não uma lenda tardia.',
   },
   {
     id: 9,
-    title: 'O versículo central aponta para confiança',
-    tag: 'Arquitetura',
-    body: 'O versículo central da Bíblia Protestante (1.189 capítulos, 31.102 versículos) é <strong>Salmos 118:8</strong>: <em>"É melhor refugiar-se no SENHOR do que confiar em príncipes."</em> O Salmo 118 é também o mais citado no Novo Testamento.',
+    title: 'Hulda: a mulher que definiu o cânon bíblico',
+    tag: 'Personagens',
+    body: 'Quando o Livro da Lei foi redescoberto no Templo (~621 a.C.), o rei Josias enviou delegados para consultar a <strong>profetisa Hulda</strong> — não os profetas homens disponíveis. Ela foi a primeira pessoa a declarar oficialmente um texto como "Sagrada Escritura", iniciando o processo de canonização do AT.',
   },
   {
     id: 10,
@@ -750,15 +750,15 @@ const CURIOSITIES = [
   },
   {
     id: 16,
-    title: 'O Salmo 119 — o acr óstico perfeito',
+    title: 'O Salmo 119 — o acróstico perfeito',
     tag: 'Arquitetura',
     body: 'Com <strong>176 versículos</strong>, o Salmo 119 é o capítulo mais longo da Bíblia. Está dividido em 22 seções de 8 versículos cada — uma para cada letra do alfabeto hebraico em ordem. Cada versículo de uma seção começa com aquela letra. É poesia mnemônica de precisão matemática.',
   },
   {
     id: 17,
-    title: 'Moisés descreveu a própria morte',
-    tag: 'Curiosidade',
-    body: 'Deuteronômio 34 descreve a morte e o sepultamento de Moisés em detalhes — inclusive que "ninguém conhece o seu sepulcro até hoje." A tradição judaica atribui esses versículos finais a <strong>Josué</strong>, discípulo de Moisés, que teria completado o livro após a morte do mestre.',
+    title: 'Débora: juíza, profetisa e general de guerra',
+    tag: 'Personagens',
+    body: '<strong>Débora</strong> é a única mulher juíza de Israel — e a única chamada simultaneamente de profetisa e juíza. O general Baraque recusava-se a entrar em batalha sem ela. Liderou Israel por 20 anos contra a opressão cananeia. Desmente qualquer narrativa de passividade feminina no texto bíblico.',
   },
   {
     id: 18,
@@ -774,9 +774,9 @@ const CURIOSITIES = [
   },
   {
     id: 20,
-    title: 'A Bíblia mais vendida e mais traduzida',
-    tag: 'Estatística',
-    body: 'A Bíblia é o livro mais vendido da história, com estimativa de <strong>5 a 6 bilhões de cópias</strong> — mais que o segundo colocado por uma margem de 3 a 4 bilhões. É também o mais traduzido: disponível em mais de <strong>3.500 idiomas</strong>, cobrindo mais de 97% da população mundial.',
+    title: 'A aparência de Jesus nunca foi descrita na Bíblia',
+    tag: 'Mitos & Fatos',
+    body: 'Nenhum versículo descreve a aparência física de Jesus — altura, cor dos olhos, dos cabelos: completamente desconhecidos. Todas as representações artísticas são invenção cultural. Isaías 53:2 diz que o servo não teria "forma nem formosura" — o oposto do Jesus louro da iconografia ocidental.',
   },
   {
     id: 21,
@@ -801,6 +801,42 @@ const CURIOSITIES = [
     title: 'O nome de Deus escondido em Ester',
     tag: 'Arquitetura',
     body: 'Em quatro versículos estratégicos de Ester, as letras iniciais (ou finais) de palavras consecutivas formam o acróstico <strong>יהוה (YHWH)</strong> — o nome divino que não aparece explicitamente no livro. Escribas massoretas sinalizaram esses versículos com letras maiúsculas. A ausência do nome é, ela mesma, uma mensagem codificada.',
+  },
+  {
+    id: 25,
+    title: 'Eliseu e as duas ursas',
+    tag: 'Curiosidade',
+    body: 'O profeta Eliseu foi chamado de "cabeça careca" por jovens na estrada. Ele os amaldiçoou em nome do SENHOR — e duas ursas saíram da floresta e atacaram <strong>42 deles</strong> (2 Reis 2:23-24). Uma das histórias mais perturbadoras e raramente pregadas de toda a Bíblia.',
+  },
+  {
+    id: 26,
+    title: 'Og de Basã: a cama de 4 metros',
+    tag: 'Curiosidade',
+    body: 'Og, rei de Basã, era um gigante cuja cama de ferro media <strong>~4 metros de comprimento por 1,8 m de largura</strong> (Deuteronômio 3:11). Uma cama king-size moderna tem 2 metros. O texto apresenta a cama como prova verificável: "ainda está em Rabá dos filhos de Amom."',
+  },
+  {
+    id: 27,
+    title: 'Absalão: cabelo cortado uma vez por ano — e pesava 2 kg',
+    tag: 'Curiosidade',
+    body: '2 Samuel 14:26 registra que Absalão, filho de Davi, cortava o cabelo apenas uma vez por ano. O peso: <strong>200 siclos (~2,3 kg)</strong>. O mesmo cabelo que o tornava famoso pela beleza foi o que o prendeu em uma árvore e causou sua morte durante a batalha.',
+  },
+  {
+    id: 28,
+    title: 'Hissopo: purificação ritual com ciência por trás',
+    tag: 'Medicina',
+    body: 'Deus ordenou o uso de <strong>hissopo</strong> como agente purificador (Êxodo 12:22; Levítico 14; Salmo 51:7). Análises farmacológicas modernas confirmam que o hissopo contém compostos com forte atividade antifúngica e antibacteriana. Era a antissepsia bíblica — 3.000 anos antes da microbiologia.',
+  },
+  {
+    id: 29,
+    title: 'A Bíblia é o livro mais roubado do mundo',
+    tag: 'Curiosidade',
+    body: 'Um dos Dez Mandamentos é "não roubarás" — mas a Bíblia é sistematicamente o livro mais furtado do mundo, desaparecendo de hotéis, hospitais e livrarias. Bibliotecários e pesquisadores documentam o fenômeno há décadas. A ironia é tão consistente que virou dado estatístico.',
+  },
+  {
+    id: 30,
+    title: 'Enoque: 365 anos e o calendário cósmico',
+    tag: 'Números',
+    body: 'Enoque viveu exatamente <strong>365 anos</strong> antes de ser arrebatado sem morrer (Gênesis 5:24) — o mesmo número de dias do ano solar. Entre os patriarcas de vida longa (Matusalém viveu 969), apenas Enoque tem esse número preciso. O detalhe nunca é explicado no texto — e raramente é casual na narrativa bíblica.',
   },
 ];
 
