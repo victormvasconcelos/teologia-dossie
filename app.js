@@ -76,6 +76,12 @@ const EVIDENCES = [
     context: 'Na tradição talmúdica, <strong>Nahum de Gimzo</strong> (séc. I d.C.) ensinava o princípio hermenêutico chamado <em>ribbui</em> — expansão implícita: cada partícula aparentemente "vazia" no Torá continha uma inclusão de significado além do objeto direto literal. Seu discípulo <strong>Rabi Akiva ben Yosef</strong> (~50–135 d.C.) radicalizou o método: expundia cada ocorrência de את como sinal de que algo adicional estava incluído além do objeto gramatical imediato. O Talmude Babilônico (<em>Pesachim</em> 22b) registra o debate: um mestre anterior desistiu do método ao chegar em Deuteronômio 6:13 ("Temerás o SENHOR teu Deus"), pois a partícula implicaria expandir o próprio objeto do temor divino — o que pareceu irreverente. Akiva sustentou a interpretação: a partícula ali inclui os sábios da Torá no objeto do temor. A <em>Epístola de Barnabé</em> (séc. II d.C.) documenta que o judaísmo cristão primitivo também leu a partícula teologicamente em outros contextos — a prática não foi inventada pelos cristãos. Quanto ao 37×73: a literatura do Antigo Oriente Próximo está repleta de estruturas numéricas intencionais embutidas por escribas para demonstrar maestria. A <em>Enuma Elish</em> babilônica possui suas próprias estruturas; Gênesis 1 foi deliberadamente composto como <em>contra-narrativa</em>, demonstrando que o Deus hebraico cria pela palavra em ordem matemática — em oposição direta ao caos-batalha cosmogônico dos deuses da Babilônia.',
     logic: 'O argumento opera em duas camadas independentes que se reforçam mutuamente. <strong>Camada hermenêutica:</strong> a partícula את é composta pelas letras que representam o começo e o fim de todo o alfabeto hebraico — como se a criação fosse enquadrada pelo Ser que abrange toda a expressão possível. Os rabinos do séc. I não inventaram essa observação por motivos cristológicos; ela estava no método exegético hebraico antes de qualquer reivindicação sobre Jesus. Quando João registra Jesus declarando em grego <em>"Ego eimi to Alpha kai to Omega"</em> — "Eu sou o Alfa e o Ômega" (Apocalipse 1:8) — ele traduz para o grego o conceito exato que o hebraico havia inscrito em Gênesis 1:1: o Ser que abrange o início e o fim de toda expressão. A conexão atravessa dois alfabetos, dois idiomas e mais de mil anos sem que nenhum autor pudesse tê-la coordenado deliberadamente. <strong>Camada arquitetural:</strong> o valor 2.701 = 37 × 73 deve ser avaliado no contexto de composição intencional. Textos do Antigo Oriente Próximo são conhecidos por seus "colofões numéricos" — estruturas matemáticas embutidas pelo autor para sinalizar ordem e maestria. Gênesis 1 foi composto como resposta literária à cosmogonia babilônica, e sua abertura exibe uma arquitetura numérica que os escribas hebraicos reconheceriam como a marca da ordem perfeita inscrita no momento em que o mundo começa — o oposto exato do caos primordial babilônico.',
     related: [25, 26],
+    refs: [
+      'Talmude Babilônico, Pesachim 22b',
+      'Bereshit Rabbah 1:14 (Midrash Rabbah)',
+      'Rashi, Perush al ha-Torah, Gênesis 1:1 (séc. XI)',
+      'Jeffrey, G. The Signature of God. Word, 1996',
+    ],
   },
   {
     id: 2, phase: 1, num: '02',
@@ -87,6 +93,12 @@ const EVIDENCES = [
     context: 'No mundo antigo — e na biologia de hoje — a linhagem é paterna. Em todas as genealogias bíblicas, a fórmula invariável é "fulano gerou sicrano" — nunca o inverso. A mulher recebe a semente; ela não possui zera. O uso do genitivo feminino aqui é tão anômalo que escribas e rabinos do período intertestamentário o comentaram. O Targum de Jônatas, tradução aramaica parafrasada do Pentateuco, mantém o texto sem alterar — porque não há como suavizar o paradoxo sem destruir o sentido.',
     logic: 'O argumento é de eliminação lógica. Se o texto dissesse "semente do homem", seria a fórmula padrão — sem paradoxo. Se dissesse "filho de uma mulher", seria neutro. A escolha deliberada de <strong>"semente DA mulher"</strong> cria uma categoria biologicamente impossível na reprodução normal. Existem exatamente dois mecanismos que poderiam satisfazê-la: (1) partenogênese espontânea humana — que não ocorre em mamíferos de forma natural; (2) concepção sem contribuição genética paterna humana — o nascimento virginal. O texto não descreve o mecanismo — ele cria a <em>condição lógica</em> que apenas um tipo de nascimento pode satisfazer. E isso no terceiro capítulo da Bíblia, séculos antes de qualquer texto do Novo Testamento.',
     related: [12],
+    refs: [
+      'Septuaginta (LXX), Gênesis 3:15, ~250 a.C.',
+      'Keil, C.F. & Delitzsch, F. Biblical Commentary on the OT, Vol. 1, 1861',
+      'Collins, C.J. Genesis 1-4: A Linguistic, Literary, and Theological Commentary. P&R, 2006',
+      'Irenaeus of Lyon, Adversus Haereses, III.23.7, ~180 d.C.',
+    ],
   },
   {
     id: 3, phase: 1, num: '03',
@@ -98,6 +110,12 @@ const EVIDENCES = [
     context: 'A Lei Mosaica (Levítico 21) estabelecia regras rígidas: apenas descendentes de Levi podiam ser sacerdotes; apenas descendentes de Arão podiam ser sumos sacerdotes. A genealogia era documento obrigatório — sem ela, nenhum sacerdote podia oficiar. Jesus era da tribo de Judá, não de Levi. Para ser sacerdote legalmente, era necessário um precedente de uma ordem sacerdotal completamente diferente, anterior e superior à levítica. E esse precedente estava em Gênesis — anterior ao próprio sistema levítico por 400+ anos.',
     logic: 'A omissão do nascimento e da morte de Melquisedeque não é lacuna do registro histórico — é engenharia jurídica intencional. Hebreus 7:3 usa o grego <em>"apator, ametor, agenealogetos"</em> — sem pai, sem mãe, sem genealogia — não para dizer que Melquisedeque era sobrenatural, mas que dentro do sistema jurídico do texto ele funciona como sacerdote eterno <em>precisamente porque</em> sua vida não tem os marcadores de início e fim documentados. Mil anos depois de Gênesis, o Salmo 110:4 cita essa figura obscura numa profecia direta ao Messias: <strong>"Tu és sacerdote para sempre, segundo a ordem de Melquisedeque."</strong> Jesus, da tribo de Judá, não poderia ser sacerdote pela lei levítica — mas a lei já havia provisionado uma ordem alternativa, mais antiga que Moisés, juridicamente impecável, baseada num precedente anterior ao próprio Israel.',
     related: [7],
+    refs: [
+      'Josephus Flavius, Antiquities of the Jews, I.10.2 (séc. I d.C.)',
+      'Horton, F.L. The Melchizedek Tradition. Cambridge University Press, 1976',
+      'Fitzmyer, J.A. Now This Melchizedek. Catholic Biblical Quarterly 25, 1963',
+      'Fragmento 11QMelch, Manuscritos do Mar Morto (séc. I a.C.)',
+    ],
   },
   {
     id: 4, phase: 1, num: '04',
@@ -109,6 +127,12 @@ const EVIDENCES = [
     context: 'O Monte Moriá é parte do sistema de colinas a nordeste de Jerusalém. O Gólgota — "lugar da caveira", lugar da crucificação — estava na mesma cadeia de colinas, fora dos muros norte da cidade. A identificação geográfica não é especulação: Josefo (Guerra dos Judeus 5.4.2) descreve o Monte do Templo e o Gólgota como parte da mesma formação rochosa. Estamos falando do mesmo sistema de montanhas — separados por talvez 1 km em linha reta.',
     logic: 'Os cinco pontos de alinhamento são estruturais, não alegóricos: (1) <strong>Mesmo sistema de montanhas</strong> — Moriá/Calvário, confirmado geograficamente; (2) <strong>Filho único amado</strong> — Isaque era o único filho da promessa; Jesus, o "Filho único" em João 3:16; (3) <strong>O filho carrega a madeira para seu próprio sacrifício</strong> — Gênesis 22:6; João 19:17 diz que Jesus "carregou a sua própria cruz"; (4) <strong>Substituição por carneiro preso pelos chifres em um emaranhado</strong> (סְבַךְ, <em>sevach</em> — "mato denso, emaranhado de ramos") — os Pais da Igreja (Orígenes, Eusébio de Cesareia) notaram a tipologia do substituto imobilizado por espinhos ao redor da cabeça; o texto hebraico limita-se ao ato literal de substituição; (5) <strong>Pai recebe o filho de volta como dos mortos</strong> — Hebreus 11:19 explicita: "Abraão cria que Deus era poderoso para ressuscitar, e da morte o recebeu em figura." Gênesis 22 não é uma história de obediência. É um roteiro teatral com endereço físico, executado 2.000 anos antes do evento que representa.',
     related: [5, 8, 10],
+    refs: [
+      '2 Crônicas 3:1 (identificação de Moriá com o local do Templo)',
+      'Josephus Flavius, Antiquities of the Jews, VII.13.4',
+      'Wenham, G.J. Genesis 16-50 (Word Biblical Commentary, Vol. 2). Word, 1994',
+      'Sarna, N.M. Genesis: JPS Torah Commentary. JPS, 1989',
+    ],
   },
   {
     id: 5, phase: 1, num: '05',
@@ -120,6 +144,12 @@ const EVIDENCES = [
     context: 'O nome "Judas" é a forma grega de "Judá" — o mesmo nome. A traição por prata: 20 moedas de prata para José (Gênesis 37:28); 30 peças de prata para Jesus (Mateus 26:15). A diferença é coerente com a inflação entre os séculos. No esquema tipológico hebraico, o "segundo José" era uma figura messiânica aguardada — a tradição rabínica do <em>Mashiach ben Yosef</em> (Messias filho de José) sobrevive no Talmude e nos Midrashim como uma expectativa paralela ao Messias davídico.',
     logic: 'O argumento mais poderoso não está na traição — está no <strong>padrão da visita dupla</strong>. Na primeira visita, José não se revela aos irmãos; eles não o reconhecem (Gênesis 42). Na segunda visita, o reconhecimento vem com prantos incontroláveis e reconciliação plena (Gênesis 45:1-3). Zacarias 12:10 profetiza usando exatamente esse padrão: <em>"Olharão para mim, aquele a quem traspassaram, e se lamentarão por ele como alguém se lamenta pelo filho único."</em> A estrutura de Gênesis 37-50 não é apenas analogia — é o template do qual Zacarias extrai o padrão. Israel não reconheceu o Messias na primeira vinda; o reconhecimento, segundo Zacarias, virá na segunda — com o mesmo pranto de Gênesis 45. A tipologia opera em dois níveis simultâneos: histórico (eventos reais acontecidos) e estrutural (o padrão que se repete com precisão).',
     related: [4, 13],
+    refs: [
+      'Midrash Rabbah, Bereshit Rabbah 84-93',
+      'Talmude Babilônico, Sukah 52a (Mashiach ben Yosef)',
+      'Kaiser, W.C. The Messiah in the Old Testament. Zondervan, 1995',
+      'Fruchtenbaum, A.G. Messianic Christology. Ariel, 1998',
+    ],
   },
   {
     id: 6, phase: 2, num: '06',
@@ -131,6 +161,11 @@ const EVIDENCES = [
     context: 'A crucificação como método de execução foi provavelmente inventada pelos fenícios/cartagineses e adotada pelos persas antes de chegar aos romanos por volta do séc. III a.C. — mais de <strong>1.000 anos depois</strong> de Números ser escrito (séc. XIII a.C.). Israel não tinha como conhecer esse instrumento quando distribuía as tribos no deserto do Sinai. A distribuição tinha funções militares (defesa radial) e litúrgicas (tribos em relação ao Tabernáculo) — não simbólicas explícitas.',
     logic: 'Quando se plotam os números proporcionalmente: Norte (157.600) ≈ Sul (151.450) → dois braços horizontais quase idênticos e simétricos; Leste (186.400) → haste vertical longa; Oeste (108.100) → haste vertical curta acima do cruzamento. O resultado é uma cruz com braços horizontais simétricos e haste vertical mais longa abaixo do cruzamento — a proporção exata da cruz latina usada pelos romanos. O Tabernáculo fica no ponto de cruzamento. A dupla tipologia: (1) <strong>matemática</strong>, pela proporcionalidade dos números de censo; (2) <strong>teológica</strong>, porque o Tabernáculo — presença de Deus — fica no coração geométrico do instrumento de sacrifício. Que isso seja design intencional ou coincidência é a questão que cada leitor responde — mas os números são históricos, a proporção é exata, e o instrumento seria inventado mais de um milênio depois.',
     related: [7, 8],
+    refs: [
+      'Números 1-2 (censo do Israel no deserto)',
+      'Josephus Flavius, Antiquities of the Jews, III.12.5',
+      'Edersheim, A. The Life and Times of Jesus the Messiah. Longmans, 1883',
+    ],
   },
   {
     id: 7, phase: 2, num: '07',
@@ -142,6 +177,12 @@ const EVIDENCES = [
     context: 'A Mishná (Pessachim 5:1) registra que o abate dos cordeiros pascais começava às 14h30 e terminava às 15h do 14 de Nisã. João 19:14 registra a condenação de Jesus por volta da "sexta hora" (12h). Mateus 27:46-50 registra a morte na "nona hora" (~15h). A coincidência horária não é aproximada — é a janela exata descrita na Mishná para o abate do Cordeiro Pascal. A Mishná é literatura rabínica judaica, não cristã.',
     logic: 'O alinhamento é horário, não apenas temático: (1) Jesus morreu às ~15h do 14 de Nisã — exata hora do abate do Cordeiro Pascal segundo a Mishná; (2) Foi sepultado durante os Pães Asmos — a festa que proibia fermento (símbolo de corrupção), e Atos 2:31 cita o Salmo 16:10: o Messias não viu corrupção; (3) Ressuscitou no domingo das Primícias — Paulo em 1 Coríntios 15:20 usa o próprio termo: <em>"primícias dos que dormem"</em>; (4) O Espírito Santo desceu no dia exato de Pentecostes (Atos 2:1-2). Quatro festas, quatro cumprimentos, todos no dia e hora corretos do calendário lunar milenar. A probabilidade de quatro eventos históricos caírem simultaneamente nas datas exatas de quatro festas independentes é matematicamente negligenciável — além da correspondência temática perfeita entre o símbolo e o cumprimento.',
     related: [9, 21, 24],
+    refs: [
+      'Levítico 23; Números 28 (Torah)',
+      'Edersheim, A. The Temple: Its Ministry and Services. Religious Tract Society, 1874',
+      'Fruchtenbaum, A.G. The Feasts of Israel. Ariel Ministries, 1974',
+      'Tomasino, A.J. Judaism Before Jesus. IVP, 2003',
+    ],
   },
   {
     id: 8, phase: 2, num: '08',
@@ -153,6 +194,11 @@ const EVIDENCES = [
     context: 'Os rabinos classificavam esse ritual como <em>chok</em> — uma lei cujo fundamento racional é escondido, que deve ser obedecida por fé. O Talmude (Yoma 14a) registra que nem o rei Salomão, com toda sua sabedoria, conseguiu explicar a lógica interna do ritual da novilha vermelha. A exigência geográfica é explícita no texto: "fora do acampamento" (Números 19:3) — idêntico à posição do Gólgota fora dos muros norte de Jerusalém, confirmado por todos os quatro evangelistas e pela arqueologia.',
     logic: 'O paradoxo é, na verdade, a lógica mais precisa do sacrifício substitutivo. A fórmula é: <em>puro absorve impureza → transfere pureza ao impuro → a impureza não permanece porque o sacrifício é consumado fora do espaço ritual</em>. Paulo a escreve em 2 Coríntios 5:21: <em>"Aquele que não conheceu pecado foi feito pecado por nós, para que nós nos tornássemos justiça de Deus nele."</em> A troca é exata: puro se torna impuro para que impuro se torne puro. A exigência geográfica de Números 19:3 ("fora do acampamento") é literalmente cumprida em Hebreus 13:11-12: <em>"Os corpos dos animais cujo sangue é trazido ao santuário pelo sumo sacerdote em expiação são queimados fora do acampamento. Por isso também Jesus padeceu fora da porta."</em> O Calvário não foi escolhido por acidente geográfico — a Lei de Moisés exigiu o endereço.',
     related: [4, 6, 23],
+    refs: [
+      'Números 19 (Torah — ritual da Novilha Vermelha)',
+      'Mishná, Parah 3:5',
+      'Edersheim, A. The Temple: Its Ministry and Services. Religious Tract Society, 1874',
+    ],
   },
   {
     id: 9, phase: 2, num: '09',
@@ -164,6 +210,11 @@ const EVIDENCES = [
     context: 'O Talmude foi compilado entre os séculos IV e VI d.C., mas preserva tradições orais dos Tannaim — mestres do período 70-200 d.C. que por sua vez citavam registros do Segundo Templo. Yoma 39b não tem qualquer relação com Jesus em seu contexto original — é simplesmente o registro de uma anomalia ritual inexplicável que os próprios rabinos documentaram sem conseguir explicar. A matemática é externa ao texto: Templo destruído em <strong>70 d.C.</strong> − 40 anos = <strong>30 d.C.</strong>',
     logic: 'Três anomalias simultâneas, documentadas por fonte judaica independente, começando no mesmo ano: (1) A sorte do Yom Kippur — que durante séculos sempre saiu à mão direita (sinal favorável) — parou de sair à direita; (2) A fita carmesim — que sempre ficava branca — parou de ficar branca; (3) A luz ocidental do candelabro — que nunca se apagava — parou de arder. O sistema sacrificial levítico sinalizou, através de seus próprios mecanismos rituais registrados em suas próprias fontes literárias, que algo havia mudado em 30 d.C. O argumento não depende de fonte cristã: <strong>o próprio Talmude judaico</strong> documenta que Deus cessou de aceitar o sistema sacrificial do Templo no ano historicamente correspondente à crucificação. A acusação de "inventado por cristãos" é impossível — a fonte é rabinica, a agenda é rabinica, e o resultado é constrangedor para a teologia rabinica tradicional.',
     related: [7, 14, 23],
+    refs: [
+      'Talmude Babilônico, Yoma 39b',
+      'Josephus Flavius, Wars of the Jews, VI.5.3',
+      'Roth, C. (ed.). Encyclopaedia Judaica. Keter, 1972, Vol. 16',
+    ],
   },
   {
     id: 10, phase: 3, num: '10',
@@ -175,6 +226,12 @@ const EVIDENCES = [
     context: 'A crucificação foi provavelmente inventada pelos fenícios/cartagineses e adotada pelos romanos por volta do séc. III a.C. — 700+ anos depois do Salmo 22. Os Manuscritos do Mar Morto encontrados em 1947 incluem o Salmo 22 (Rolo dos Salmos, 11QPsa), datado paleograficamente por especialistas como ~150-250 a.C. — mais de 200 anos antes de Jesus. Isso elimina a possibilidade de que o texto seja uma criação posterior ao evento. A palavra <em>tola\'at</em> (תּוֹלַעַת) no versículo 6 — "eu sou um verme, e não homem" — é o termo hebraico para o inseto <em>Coccus ilicis</em>, a cochonilha escarlate que se fixa num madeiro, morre nele, e ao morrer secreta tinta escarlate sobre seus ovos para dar vida à prole. <strong>Nota textual sobre o versículo 16:</strong> O Texto Massorético tradicional lê כָּאֲרִי (<em>ka\'ari</em> = "como um leão"), enquanto a Septuaginta (LXX) e os fragmentos de Qumran 5/6HevPs — manuscritos pré-cristãos datados do séc. I a.C. — leem כָּרוּ (<em>karu</em> = "cavaram/perfuraram"). A diferença de uma única letra (Yod×Vav) é o debate textual clássico; a evidência de Qumran apoia a leitura "perfuraram" como a mais antiga documentada.',
     logic: 'O Salmo 22 é o mais forense da Bíblia. Cada sintoma é medicamente verificável na crucificação romana: (1) <strong>Desconjuntamento de ossos</strong> (v.14) — o peso do corpo suspenso desloca ombros, cotovelos e joelhos; (2) <strong>Coração como cera</strong> (v.14) — hemopericárdio: sangue se acumula ao redor do coração por trauma torácico, com consistência e aspecto descrito como "cera" por patologistas forenses; (3) <strong>Sede extrema</strong> (v.15) — hematidrose + flagelação + exposição solar causam desidratação severa; (4) <strong>"Traspassaram mãos e pés"</strong> (v.16) — confirmado pela Septuaginta e pelos fragmentos de Qumran; (5) <strong>Ossos visíveis sem serem quebrados</strong> (v.17) — em crucificados, a distensão muscular tornava as costelas e vértebras visíveis sob a pele; (6) <strong>Sorteio das vestes</strong> (v.18) — João 19:23-24 descreve a cena e cita o Salmo explicitamente. A tipologia do <em>tola\'at</em> (v.6) adiciona uma camada bioquímica: o inseto que morre fixado num madeiro secretando sangue escarlate para dar vida — é a imagem mais precisa do Calvário que nenhum humano teria inventado mil anos antes.',
     related: [4, 19, 20],
+    refs: [
+      'Fragmento 4QPsb, Qumran (~250 a.C.)',
+      'Edwards, W.D. et al. On the Physical Death of Jesus Christ. JAMA, vol. 255, n. 11, 1986',
+      'Hengel, M. Crucifixion in the Ancient World. Fortress Press, 1977',
+      'Dahood, M. Psalms I (Anchor Bible). Doubleday, 1966',
+    ],
   },
   {
     id: 11, phase: 3, num: '11',
@@ -186,6 +243,11 @@ const EVIDENCES = [
     context: 'Na linguagem hebraica, muitas palavras podem ser decompostas em dois elementos morfológicos que preservam significado. Em אֶבֶן (Alef-Bet-Nun): as letras Alef-Bet formam <strong>אָב (Av = Pai)</strong>; as letras Bet-Nun formam <strong>בֵּן (Ben = Filho)</strong>. A letra Bet (ב) no meio pertence a ambos — é o elemento compartilhado que conecta Pai e Filho na mesma palavra. Esta decomposição não é especulação cabalística — é morfologia hebraica documentada usada por múltiplos comentaristas rabínicos ao longo dos séculos, incluindo Rashi no séc. XI d.C.',
     logic: 'O argumento opera em dois níveis. Primeiro, linguístico: אֶבֶן é a palavra usada não apenas no Salmo 118, mas na construção do Templo de Salomão (1 Reis 6), nas lápides das Tábuas da Lei, e na <em>Even HaShetiyah</em> — a Pedra do Fundamento sobre a qual repousa o Templo, que tradições judaicas identificam como o ponto de criação do mundo. A palavra central da teologia do Templo carrega, em sua ortografia, a relação Pai-Filho. Segundo, cristológico: quando Jesus se aplica o Salmo 118:22, e quando o Novo Testamento articula sua natureza como Filho eterno do Pai (João 1:1, Colossenses 1:15-17), há uma camada de significado inscrita no hebraico original que a tradução para qualquer idioma moderno destrói completamente. A "pedra angular" que a teologia cristã identifica com Cristo carrega, na própria estrutura de suas letras em hebraico, a natureza teológica que lhe é atribuída. Quem escreveu a língua hebraica com essa especificidade é a pergunta.',
     related: [1],
+    refs: [
+      'Brown, F.; Driver, S.R.; Briggs, C.A. A Hebrew and English Lexicon (BDB). Clarendon, 1906',
+      'Rashi, Perush al ha-Torah, comentário a Gênesis (séc. XI)',
+      'Gesenius, W. Hebrew and Chaldee Lexicon. Vogel, 1847',
+    ],
   },
   {
     id: 12, phase: 3, num: '12',
@@ -197,6 +259,12 @@ const EVIDENCES = [
     context: 'Existiam duas cidades chamadas Belém em Israel: Belém de Judá (chamada também Belém Efrata) e Belém de Zebulom, ao norte (Josué 19:15). Sem o qualificador "Efrata", a profecia seria geograficamente ambígua. Sobre Isaías 7:14: almah (עַלְמָה) pode significar "jovem mulher" em contextos gerais. O hebraico <em>bethulah</em> (בְּתוּלָה) é o termo mais tecnicamente específico para virgindade. O debate linguístico foi real — e a Septuaginta o resolve.',
     logic: 'O argumento decisivo é histórico e documental: a <strong>Septuaginta (LXX)</strong> foi a tradução do Antigo Testamento hebraico para o grego, produzida por 70 escribas judeus em Alexandria por volta de <strong>250 a.C.</strong>, a pedido do faraó Ptolomeu II Filadelfo — para a Biblioteca de Alexandria. Esses escribas judeus, sem qualquer contato com o Novo Testamento (que seria escrito 250+ anos depois), traduziram <em>almah</em> em Isaías 7:14 com o grego <strong>παρθένος (Parthenos)</strong> — o termo mais específico e sem ambiguidade para virgindade intacta em grego, correspondendo ao <em>bethulah</em> hebraico mais do que ao almah mais genérico. Isso prova três coisas: (1) A expectativa do nascimento virginal era <strong>judaica e pré-cristã</strong>, não uma invenção do Novo Testamento; (2) O debate sobre "almah = jovem mulher comum" é posterior à Septuaginta; (3) Os primeiros cristãos não inventaram a interpretação virginal — encontraram-na na tradução que os próprios judeus alexandrinos já usavam como Escritura. Miqueias deu o CEP; Isaías deu o mecanismo de nascimento; a Septuaginta confirmou o mecanismo 250 anos antes do evento.',
     related: [2, 14],
+    refs: [
+      'Septuaginta (LXX), Isaías 7:14, ~250 a.C.',
+      'Motyer, J.A. The Prophecy of Isaiah. IVP, 1993',
+      'Kaiser, W.C. The Messiah in the Old Testament. Zondervan, 1995',
+      'Oswalt, J.N. The Book of Isaiah, Chapters 1-39 (NICOT). Eerdmans, 1986',
+    ],
   },
   {
     id: 13, phase: 3, num: '13',
@@ -208,6 +276,12 @@ const EVIDENCES = [
     context: 'A prática romana proibia sepultura privada para condenados à crucificação. O criminoso crucificado era normalmente deixado na cruz até apodrecer, ou descartado em valas comuns fora dos muros (a Geena). Sepultura privada era um privilégio negado por lei a condenados ao suplício — a execução incluía a desonra pós-mortem. Além disso, José de Arimateia era membro do Sinédrio — o mesmo tribunal que havia votado pela condenação de Jesus. Pedir o corpo ao governador romano era juridicamente incomum e politicamente arriscado.',
     logic: 'A impossibilidade jurídica é o argumento central. Isaías 53:9 combina dois destinos incompatíveis dentro do sistema legal romano: (1) morte com criminosos — crucificação romana para condenado messiânico em Jerusalém no séc. I; (2) sepultura com rico — privada, honrosa, em túmulo particular. Esses dois destinos eram <strong>mutuamente exclusivos</strong> pela lei romana. A única saída do paradoxo exige uma intervenção de alta especificidade: alguém com recursos para ter túmulo próprio recém-esculpido + autoridade suficiente para pedir o corpo ao governador romano + motivação suficiente para se expor politicamente — mesmo sendo membro do tribunal que condenou Jesus. José de Arimateia satisfaz os três critérios simultaneamente. Isaías escreveu o paradoxo juridicamente impossível no séc. VIII a.C. A solução específica ocorreu 700 anos depois, exatamente como o texto exigia, resolvendo uma impossibilidade que nenhum planejador humano poderia ter fabricado.',
     related: [5, 14],
+    refs: [
+      'Josephus Flavius, Wars of the Jews, IV.5.2',
+      'Hengel, M. Crucifixion in the Ancient World. Fortress Press, 1977',
+      'Young, E.J. The Book of Isaiah, Vol. 3. Eerdmans, 1972',
+      'North, C.R. The Suffering Servant in Deutero-Isaiah. OUP, 1948',
+    ],
   },
   {
     id: 14, phase: 3, num: '14',
@@ -219,6 +293,12 @@ const EVIDENCES = [
     context: 'O calendário profético hebraico usava um ano de <strong>360 dias</strong> (12 meses de 30 dias) — o mesmo padrão de Gênesis 7:11/8:4 ("150 dias" = "5 meses" = 30 dias por mês), de Daniel, e de Apocalipse. É diferente do calendário civil judaico (354 dias) e do gregoriano (365,25 dias). O Talmude (Sanhedrin 97b) registra: <em>"Que estejam malditos os que calculam os fins dos tempos."</em> A proibição rabínica de calcular especificamente os fins escatológicos — sem precedente para outras profecias de Daniel — sugere que os rabinos sabiam aonde os cálculos levavam e não queriam que chegassem lá.',
     logic: 'A matemática: 69 semanas × 7 anos = <strong>483 anos proféticos</strong>. Em dias: 483 × 360 = <strong>173.880 dias</strong>. Ponto de partida: decreto de Artaxerxes, Nisã 445 a.C. (confirmado pelos Papiros de Elefantina e pela cronologia persa). Adicionando 173.880 dias ao calendário juliano: Sir Robert Anderson (<em>The Coming Prince</em>, 1894) chegou a <strong>6 de abril de 32 d.C.</strong>; Harold Hoehner (<em>Chronological Aspects of the Life of Christ</em>, 1977), usando metodologia independente, chegou a <strong>6 de abril de 33 d.C.</strong> A diferença de um ano resulta de ajustes técnicos no ponto de partida do decreto de Artaxerxes e no tratamento do ano de acesso persa. Ambos apontam para a entrada triunfal em Jerusalém, onde Jesus declarou publicamente ser o Messias (Lucas 19:37-44). O versículo seguinte (v.26) exige que a morte messiânica e a destruição do Templo ocorram na sequência — o Templo foi destruído em <strong>70 d.C.</strong> Qualquer candidato messiânico após essa data viola matematicamente o próprio texto: Daniel exige que o Messias venha e morra antes de 70 d.C. Daniel foi escrito no séc. VI a.C.; os fragmentos de Qumran datam de ~125 a.C. — mais de 150 anos antes do cumprimento.',
     related: [7, 9, 12],
+    refs: [
+      'Anderson, R. The Coming Prince. Hodder & Stoughton, 1894',
+      'Hoehner, H.W. Chronological Aspects of the Life of Christ. Zondervan, 1977',
+      'Talmude Babilônico, Sanhedrin 97b',
+      'Archer, G.L. Encyclopedia of Bible Difficulties. Zondervan, 1982',
+    ],
   },
   {
     id: 15, phase: 4, num: '15',
@@ -230,6 +310,11 @@ const EVIDENCES = [
     context: 'Hipócrates (~460-370 a.C.) classificou as febres em dois tipos: <em>pyretoi mikroi</em> (febres pequenas, autolimitadas, passageiras) e <em>pyretoi megaloi</em> (grandes febres, sistêmicas, frequentemente fatais). Essa taxonomia era o sistema clínico vigente em toda a medicina greco-romana do séc. I d.C. Lucas estudou medicina no mundo helenístico — sua precisão vocabular é consistente com o Corpus Hippocraticum em múltiplos episódios, não apenas aqui. O vocabulário médico de Lucas foi identificado e catalogado pelo especialista William Hobart no séc. XIX em sua obra <em>The Medical Language of St. Luke</em> (1882).',
     logic: 'A distinção técnica que Lucas faz tem duas implicações: (1) <strong>Diagnóstica</strong>: <em>pyretō megalō</em> indica infecção sistêmica severa — não uma gripe passageira, mas condição com febre alta, prostração total e risco de morte. A mulher estava acamada, não simplesmente indisposta. (2) <strong>Fisiológica do milagre</strong>: após infecção sistêmica severa com febre alta, o corpo humano leva dias para: normalizar temperatura, restaurar eletrólitos perdidos pelo suor, reparar dano tecidual por hipertermia, e recompor estoques de ATP celular para atividade muscular. <em>"Ela se levantou e os serviu"</em> imediatamente implica normalização instantânea de todos esses processos em paralelo. Nenhum antibiótico elimina a convalescença — ele apenas elimina o agente infeccioso; o corpo ainda precisa se recuperar. A cura documentada por Lucas é dupla: eliminação da infecção + ausência total de recuperação biológica. E somente Lucas documenta a gravidade — porque só Lucas sabia nomear clinicamente o que via.',
     related: [16, 17, 18],
+    refs: [
+      'Hobart, W.K. The Medical Language of St. Luke. Hodges & Figgis, 1882',
+      'Hippocrates, Epidemics I & III (Corpus Hippocraticum), séc. V a.C.',
+      'Harnack, A. Luke the Physician. Williams & Norgate, 1907',
+    ],
   },
   {
     id: 16, phase: 4, num: '16',
@@ -241,6 +326,11 @@ const EVIDENCES = [
     context: 'A hanseníase (<em>Mycobacterium leprae</em>) ataca primariamente nervos periféricos — causando perda de sensação tátil, incapacidade motora progressiva, mutilação de dedos, e necrose de cartilagem (nariz, orelhas). Reabsorção óssea é estágio avançado. "Cheio de lepra" implica todos esses estágios. Contraste vocabular crucial: <em>therapeuo</em> (θεραπεύω) = tratar, ministrar terapia, cuidar — a palavra padrão para curas no NT; <em>katharizo</em> (καθαρίζω) = purificar completamente, erradicar, restaurar ao estado pré-contaminado — a palavra usada na purificação ritual do Levítico 13-14. Raiz de "catarse" — não a emocional de Aristóteles, mas a química: remoção total de impureza.',
     logic: 'A escolha de Lucas entre katharizo e therapeuo é cirurgicamente precisa. Therapeuo seria adequado se Jesus houvesse eliminado o agente patológico — como um antibiótico moderno. Katharizo implica restauração ao <em>estado anterior à doença</em>. Para "um homem cheio de lepra", isso inclui: (1) eliminação da <em>Mycobacterium leprae</em>; (2) regeneração de nervos periféricos desmielinizados — neurologicamente impossível em adultos com técnica médica atual; (3) reconstituição de cartilagem necrosada — tecido avascular que não se auto-repara; (4) reversão de reabsorção óssea; (5) restauração de sensação tátil onde foi permanentemente destruída. A medicina moderna com poliquimioterapia (rifampicina + dapsona + clofazimina) pode curar a infecção bacteriana, mas não regenera tecido nervoso nem cartilagem já destruídos. O que Lucas registra excede em ordem de magnitude tudo que a farmacologia moderna pode oferecer — e ele usou o único verbo que descreve exatamente isso.',
     related: [15, 17, 18],
+    refs: [
+      'Hobart, W.K. The Medical Language of St. Luke. Hodges & Figgis, 1882',
+      'Wilkinson, J. The Bible and Healing. Handsel Press, 1998',
+      'Hippocrates, On the Sacred Disease (Corpus Hippocraticum), séc. V a.C.',
+    ],
   },
   {
     id: 17, phase: 4, num: '17',
@@ -252,6 +342,11 @@ const EVIDENCES = [
     context: '<em>Rhysei haimatos</em> é diagnóstico médico preciso: fluxo/derrame contínuo de sangue de origem vascular — não sangramento periódico normal, mas hemorragia crônica contínua. Doze anos de hemorragia crônica sem remissão indica condição vascular grave (fibroma uterino, malformação arteriovenosa, coagulopatia). <em>Dynamis</em> (δύναμις) aparece 120 vezes no Novo Testamento. Em Aristóteles: força, potência, capacidade de realizar trabalho físico. Na física moderna: energia cinética, capacidade de causar deslocamento ou mudança. Raiz de: dinâmica, dinamite, dínamo — todas palavras sobre energia física mensurável.',
     logic: 'Jesus não descreve uma percepção subjetiva — descreve um <strong>evento físico com direção e quantidade</strong>. O verbo <em>exelthein</em> (saiu) implica movimento direcional: dynamis saiu de dentro de Jesus em direção à mulher. Na física, energia é transferida quando um sistema mais energético interage com um sistema menos energético — a energia flui em direção definida. Jesus descreve isso com precisão: não "fiz algo", não "senti algo" — "energia <em>saiu</em> de mim." A estancagem vascular imediata implica vasoconstricção instantânea, coagulação acelerada ou fechamento anatômico de ruptura que perdurava há 12 anos. Nenhum mecanismo fisiológico convencional produz vasoconstricção seletiva instantânea por toque externo em estrutura vascular interna. Lucas documenta o que um médico documentaria: diagnóstico exato, cronicidade, inefetividade do tratamento convencional, resultado imediato. E registra a autodescripção de Jesus — dynamis — a palavra que um engenheiro escolheria.',
     related: [15, 16, 18],
+    refs: [
+      'Hobart, W.K. The Medical Language of St. Luke. Hodges & Figgis, 1882',
+      'Liddell, H.G.; Scott, R. A Greek-English Lexicon (LSJ). Clarendon, 1940',
+      'Cadbury, H.J. The Style and Literary Method of Luke. Harvard, 1920',
+    ],
   },
   {
     id: 18, phase: 4, num: '18',
@@ -263,6 +358,11 @@ const EVIDENCES = [
     context: 'Hidropisia (<em>hydrops</em> do grego <em>hydor</em> = água) é o acúmulo patológico de fluido em cavidades corporais e tecidos. Causas principais: (1) Insuficiência cardíaca congestiva — coração incapaz de bombear eficientemente, fluido se acumula em pulmões e extremidades; (2) Cirrose hepática avançada — fígado sem capacidade de sintetizar proteínas séricas, pressão osmótica cai, fluido vaza para o abdômen (ascite); (3) Síndrome nefrótica grave — rins incapazes de reter proteínas. Em 30 d.C., sem diuréticos, transplante de órgão ou diálise, <em>hydropikos</em> = prognóstico de semanas a meses. É sentença de morte com diagnóstico preciso.',
     logic: 'A precisão diagnóstica de Lucas serve a dois argumentos paralelos: (1) <strong>Credibilidade do autor</strong>: um leigo descreveria o homem como "muito inchado" ou "com barriga grande". Um médico treinado no modelo hipocrático identifica hydropikos — diagnóstico diferencial que implica automaticamente a falência do órgão subjacente e o prognóstico terminal. Lucas escreve como quem foi treinado para observar e classificar doenças. (2) <strong>Magnitude do milagre</strong>: curar a hidropisia não é simplesmente drenar o fluido acumulado — é restaurar funcionalmente o órgão que causou o acúmulo. Se cardíaca: reparar o músculo cardíaco falido. Se hepática: restaurar a síntese proteica hepática. Se renal: normalizar a filtração glomerular. Em qualquer caso: reestruturação anatômica e funcional de múltiplos sistemas orgânicos em estágio terminal, instantaneamente. A medicina moderna com UTI de última geração, diálise e transplante leva semanas a meses para resultados parciais em casos individuais — e os casos múltiplos combinados requerem anos de espera por órgãos compatíveis. O que Lucas documenta em uma frase levaria anos e múltiplas equipes médicas na medicina do séc. XXI.',
     related: [15, 16, 17],
+    refs: [
+      'Hobart, W.K. The Medical Language of St. Luke. Hodges & Figgis, 1882',
+      'Hippocrates, Prognosis (Corpus Hippocraticum), séc. V a.C.',
+      'Cadbury, H.J. The Style and Literary Method of Luke. Harvard, 1920',
+    ],
   },
   {
     id: 19, phase: 5, num: '19',
@@ -274,6 +374,11 @@ const EVIDENCES = [
     context: 'Hematidrose é condição médica documentada: estresse emocional ou físico extremo provoca ruptura dos capilares que circundam as glândulas sudoríparas. Sangue se mistura com o suor e emerge pela pele. Aristóteles e Teofrasto (séc. IV a.C.) já a descreveram. Casos modernos documentados: guerreiros antes de batalha, prisioneiros antes de execução, cirurgiões em operações de alta pressão. Dr. Frederick Zugibe (legista forense do Condado de Rockland, NY) documentou casos em pacientes com distúrbios de pânico severos. A literatura médica contém ~150 casos verificados. Lucas usa o vocabulário correto para a condição — não a metáfora de um poeta.',
     logic: 'O detalhe médico tem implicações físicas em cadeia para tudo que veio depois: (1) <strong>Hipersensibilidade cutânea</strong> — a pele com capilares rompidos fica extremamente sensível ao toque, tornando a flagelação subsequente ainda mais traumática do que seria normalmente; (2) <strong>Desidratação adicional</strong> — perda de fluido pela hematidrose somada ao estresse metabólico e à ausência de ingestão de água; (3) <strong>Fragilidade vascular aumentada</strong> — capilares já rompidos ficam mais suscetíveis a trauma mecânico. Jesus chegou à crucificação fisiologicamente comprometido em múltiplos sistemas antes de qualquer flagelação. A crucificação romana normalmente durava <strong>2-3 dias</strong> porque o mecanismo de morte é asfixia lenta — a vítima oscilava entre posições para respirar, podendo manter isso por dias. Que Jesus tenha morrido em aproximadamente 6 horas é clinicamente coerente com o estado pré-crucificação acumulado: hematidrose + flagelação romana com o flagrum (correia com ossos e metal que expunha músculo) + desidratação + hemopericárdio (João 19:34 registra saída de sangue e água — característica de derrame pericárdico traumático). Lucas é o único evangelista que menciona a hematidrose. Porque só Lucas sabia o nome do que via.',
     related: [4, 10, 20],
+    refs: [
+      'Edwards, W.D. et al. On the Physical Death of Jesus Christ. JAMA, vol. 255, n. 11, 1986',
+      'Hobart, W.K. The Medical Language of St. Luke. Hodges & Figgis, 1882',
+      'Liddell, H.G.; Scott, R. A Greek-English Lexicon (LSJ). Clarendon, 1940',
+    ],
   },
   {
     id: 20, phase: 5, num: '20',
@@ -285,6 +390,11 @@ const EVIDENCES = [
     context: 'O pavilhão auricular é composto de cartilagem elástica coberta por pele fina, irrigada por vascularização superficial. A cartilagem é <strong>tecido avascular</strong> — sem vasos sanguíneos diretos, recebe nutrição por difusão do pericôndrio. Isso a torna praticamente incapaz de auto-regeneração em adultos após trauma severo ou amputação. A inervação do pavilhão inclui múltiplos nervos: auriculotemporal (ramo do trigêmeo), auricular magno, e ramos do occipital menor. Cirurgia de reimplante de pavilhão auricular moderna (microcirurgia) leva 4-8 horas com equipe especializada e anestesia geral — e os resultados dependem do tempo de isquemia (quanto tempo o tecido ficou sem circulação).',
     logic: 'O que <em>iaomai</em> implica neste contexto não é analgesia nem curativo — é reconstrução anatômica completa. O pavilhão de Malco estava amputado: separado do crânio, sem suprimento sanguíneo, sem inervação, em queda para o chão (João 18:10 implica corte limpo com espada). A regeneração instantânea implica simultaneamente: (1) reintegração anatômica da cartilagem elástica seccionada — tecido que não se auto-repara em adultos; (2) restabelecimento da vascularização superficial — capilares que foram cortados com o tecido; (3) reinervação dos ramos auriculotemporais e auricular magno seccionados — nervos que normalmente regeneram a ~1 mm por dia, levando meses; (4) recuperação sensorial completa. Lucas documenta isso com o vocabulário médico que os outros evangelistas não possuíam — <em>iaomai</em> em vez do genérico <em>therapeuo</em>, e <em>to otion</em> em vez de simplesmente "a orelha". Um leigo que testemunhou escreveria "Jesus colou a orelha de volta." Um médico escreve <em>iaomai</em> — e quem entende o que a palavra implica biologicamente fica em silêncio.',
     related: [15, 16, 19],
+    refs: [
+      'Hobart, W.K. The Medical Language of St. Luke. Hodges & Figgis, 1882',
+      'Hippocrates, On Wounds in the Head (Corpus Hippocraticum), séc. V a.C.',
+      'Liddell, H.G.; Scott, R. A Greek-English Lexicon (LSJ). Clarendon, 1940',
+    ],
   },
   {
     id: 21, phase: 5, num: '21',
@@ -296,6 +406,11 @@ const EVIDENCES = [
     context: 'Os Manuscritos do Mar Morto — 972 documentos descobertos em 1947 nas cavernas de Qumran — revelaram que a comunidade essênia (e provavelmente galileus em geral) usava um <strong>calendário solar de 364 dias</strong>, derivado do Livro dos Jubileus e do Livro de Enoque. Este calendário colocava a Páscoa sempre em terça ou quarta-feira. O calendário lunar farisaico/do Templo — o calendário oficial de Jerusalém — colocava a Páscoa no 14 de Nisã lunar, que nos anos de 30-33 d.C. caiu em sexta-feira.',
     logic: 'A solução proposta pelo astrônomo e biblista francesa Annie Jaubert em 1957, com base nos manuscritos de Qumran: Jesus celebrou a Última Ceia na terça-feira (ou quarta) do <strong>calendário solar galileu/essênio</strong> — data legítima de Pessach para galileus que seguiam esse sistema. Foi preso na madrugada. Interrogado ao longo da noite e dia seguinte. Crucificado na sexta-feira — data da Páscoa do <strong>calendário lunar do Templo</strong>, exatamente na hora do abate dos cordeiros pascais segundo a Mishná. Resultado: Jesus foi o Cordeiro Pascal em <strong>ambos os calendários simultaneamente</strong>. Marcos relata pelo calendário solar galileu (a Ceia era Páscoa); João relata pelo calendário lunar do Templo (Jesus morre como Cordeiro antes da festa oficial). Nenhum dos dois está errado — estão descrevendo o mesmo evento por dois sistemas calendáricos coexistentes que a arqueologia de Qumran confirmou. A "contradição irreconciliável" era irreconciliável apenas para quem desconhecia a existência do calendário duplo.',
     related: [7, 22],
+    refs: [
+      'Jaubert, A. The Date of the Last Supper. Alba House, 1965',
+      'VanderKam, J.C. Calendars in the Dead Sea Scrolls. Routledge, 1998',
+      'Charlesworth, J.H. (ed.). Jesus and the Dead Sea Scrolls. Doubleday, 1992',
+    ],
   },
   {
     id: 22, phase: 5, num: '22',
@@ -307,6 +422,12 @@ const EVIDENCES = [
     context: '<strong>Talo</strong>: historiador samaritano que escreveu uma história do Mediterrâneo por volta de 52 d.C. Sua obra original foi perdida, mas é citada por Júlio Africano (~221 d.C.): <em>"Talo, em seu terceiro livro de histórias, chama esta escuridão de eclipse solar — parece-me sem razão."</em> Africano então explica por que não pode ser eclipse: é Lua Cheia durante a Páscoa. <strong>Flegão de Trale</strong>: liberto do imperador Adriano, autor de <em>Olympiades</em> (~137 d.C.): <em>"No quarto ano da 202ª Olimpíada [32-33 d.C.], uma grande escuridão ocorreu acima de todo o mundo, e as estrelas apareceram durante o dia... e houve um grande terremoto na Bitínia."</em> Citado por Orígenes (<em>Contra Celso</em> 2.33) e Eusébio de Cesareia.',
     logic: 'O argumento opera em dois níveis: (1) <strong>Físico</strong>: se Talo tentou explicar o fenômeno como eclipse solar, ele confirma que o evento foi real o suficiente para exigir explicação naturalista pagã. Um evento imaginado não precisa de explicação pagã. A tentativa de racionalizar — por alguém sem agenda cristã, escrevendo 20 anos após a crucificação — é a prova involuntária de que algo realmente ocorreu. (2) <strong>Testemunhal independente</strong>: Talo (c. 52 d.C.) e Flegão (c. 137 d.C.) são dois pagãos, sem vínculo com o movimento cristão primitivo, que registraram escuridão anômala de horas no mesmo período histórico, com Flegão adicionando o terremoto — que Mateus 27:51 também menciona. Um fenômeno confirmado por fontes que não tinham razão teológica para confirmá-lo e razão racional para negá-lo tem força probatória superior a qualquer testemunho ideologicamente motivado. O Evangelho é corroborado por quem mais quereria refutá-lo.',
     related: [21, 23, 30],
+    refs: [
+      'Thallus (fragmento em Júlio Africano, Chronographia, séc. III d.C.)',
+      'Phlegon of Tralles, Olympiades (fragmento em Eusébio de Cesareia, Chronicles)',
+      'Habermas, G.R. The Historical Jesus: Ancient Evidence. College Press, 1996',
+      'McDowell, J. Evidence That Demands a Verdict. Thomas Nelson, 1999',
+    ],
   },
   {
     id: 23, phase: 5, num: '23',
@@ -318,6 +439,11 @@ const EVIDENCES = [
     context: 'Josefo (<em>Guerra dos Judeus</em> 5.5.4) corrobora a Mishná: <em>"O véu era babilônico, bordado com escarlate, linho, azul e púrpura. Era obra extraordinária de grande espessura."</em> Em outro trecho, Josefo registra que 300 sacerdotes eram necessários para imergir e lavar o Parokhet durante as purificações rituais — confirmando que seu peso e espessura tornavam qualquer manipulação uma tarefa coletiva monumental. O Santo dos Santos ficava na seção interna do Templo, inacessível a qualquer pessoa exceto ao sumo sacerdote, uma única vez por ano, no Yom Kippur.',
     logic: 'O problema físico é de localização da força inicial: para rasgar um véu de baixo para cima — de qualquer tamanho — uma pessoa com faca ou instrumento alcança a base. Para rasgar <em>de cima para baixo</em> implica que a força começou a <strong>18 metros de altura</strong> — inacessível a qualquer ser humano a pé, e impossível alcançar sem equipamento especializado em espaço restrito. Quanto à hipótese de terremoto (Mateus 27:51 também menciona terremoto): materiais têxteis densos e quadruplicados de alta resistência (10 cm de espessura) absorvem e distribuem vibração — um terremoto pode deslocar estruturas rígidas, mas não rasga tecido têxtil denso em linha reta de cima a baixo. Hebreus 10:19-20 fornece a interpretação: <em>"temos, pois, irmãos, ousadia para entrar no lugar santíssimo pelo sangue de Jesus, pelo caminho novo e vivo que ele nos consagrou pelo véu, isto é, a sua carne."</em> O rasgo do véu não é um evento simbólico conveniente — é um evento com parâmetros físicos documentados que tornam a explicação convencional materialmente inadequada, e com interpretação teológica que o autor de Hebreus considerou central à compreensão da morte de Jesus.',
     related: [8, 9, 22],
+    refs: [
+      'Mishná, Shekalim 8:5',
+      'Josephus Flavius, Wars of the Jews, V.5.4',
+      'Edersheim, A. The Temple: Its Ministry and Services. Religious Tract Society, 1874',
+    ],
   },
   {
     id: 24, phase: 6, num: '24',
@@ -329,6 +455,12 @@ const EVIDENCES = [
     context: 'O padrão de cumprimento das festas de primavera estabelece uma lógica inequívoca: Páscoa (morte de Jesus, 14 Nisã, ~15h), Pães Asmos (sepultamento, Salmo 16:10 + Atos 2:31), Primícias (ressurreição, 1 Co 15:20), Pentecostes (Espírito Santo, Atos 2:1-2) — todos no dia e hora precisos do calendário lunar hebraico. Paulo em 1 Coríntios 5:7 explicita a conexão: <em>"Cristo, nossa páscoa, foi imolado."</em> O sistema de festas como "profecia calendárica progressiva" é teologicamente canônico, não especulativo.',
     logic: 'A lógica indutiva é: se as 4 festas de primavera funcionaram como cronograma exato com precisão de relógio, as 3 de outono são o mesmo tipo de roteiro para o que ainda está por vir. Conteúdo específico por festa: <strong>Rosh Hashaná (Trombetas)</strong> — a única festa do calendário hebraico cuja data exata não era conhecida antecipadamente (dependia de testemunhas oculares da Lua Nova) → base para Mateus 24:36 ("ninguém sabe o dia nem a hora") e para 1 Tessalonicenses 4:16 ("a voz do arcanjo e a trombeta de Deus"). <strong>Yom Kippur (Expiação)</strong> — dia de abertura dos livros, julgamento e reconciliação nacional → Apocalipse 20 (grandes tronos brancos, livros abertos) + Zacarias 12:10 (Israel reconhecendo o Messias). <strong>Sucot (Tabernáculos)</strong> — Deus habitando fisicamente com o povo nas tendas → Apocalipse 21:3 (<em>"o tabernáculo de Deus está com os homens, e ele habitará com eles"</em>). Zacarias 14:16 confirma com detalhe incomum: após o Juízo, sobreviventes das nações subirão anualmente a Jerusalém para guardar a Festa dos Tabernáculos no Reino Milenar. O calendário de Levítico 23 é o mapa.',
     related: [7, 25, 26],
+    refs: [
+      'Levítico 23:23-44 (Torah — Festas de Outono)',
+      'Fruchtenbaum, A.G. The Footsteps of the Messiah. Ariel Ministries, 1982',
+      'Edersheim, A. The Temple: Its Ministry and Services. Religious Tract Society, 1874',
+      'Beale, G.K. The Book of Revelation (NIGTC). Eerdmans, 1999',
+    ],
   },
   {
     id: 25, phase: 6, num: '25',
@@ -340,6 +472,11 @@ const EVIDENCES = [
     context: 'O quiasmo (do grego <em>chi</em>, χ, em forma de X) é uma estrutura literária hebraica em que elementos são apresentados em ordem A-B-C e revertidos em C-B-A, com o ponto central como clímax. A Bíblia usa quiasmos em todos os níveis de escala — de versículos individuais (João 1:1-18) a livros inteiros (Amós). O quiasmo cósmico de Gênesis-Apocalipse é o maior identificado — atravessa 66 livros e ~1.500 anos de produção literária por autores que viveram em culturas e continentes diferentes.',
     logic: 'A especificidade do espelho elimina a coincidência: não é correspondência genérica de "começo e fim da história" — é item a item, na ordem inversa precisa. Onde Gênesis tem trevas → Apocalipse tem "não há mais noite". Onde Gênesis tem acesso à Árvore da Vida perdido → Apocalipse tem acesso restaurado (com detalhe específico: as folhas da Árvore servem para a cura das nações — Ap 22:2). Onde Gênesis fecha o Éden com querubins guardando com espada → Apocalipse abre a Nova Jerusalém com portões que <em>nunca se fecham</em> (Ap 21:25). A maldição específica de Gênesis 3:17-19 (trabalho com espinhos, dor no parto, retorno ao pó) é especificamente revertida em Apocalipse 22:3 ("não haverá mais maldição"). Para que esse espelho exista através de 1.500 anos e 40 autores, ou houve uma coordenação editorial humana impossível entre pessoas separadas por séculos e culturas sem comunicação — ou o texto tem um único Autor que começou com o desfecho em mente antes de começar a abertura.',
     related: [1, 26, 24],
+    refs: [
+      'Beale, G.K. The Book of Revelation (NIGTC). Eerdmans, 1999',
+      'Wenham, G.J. Genesis 1-15 (Word Biblical Commentary, Vol. 1). Word Books, 1987',
+      'Walsh, J.T. Style and Structure in Biblical Hebrew Narrative. Liturgical Press, 2001',
+    ],
   },
   {
     id: 26, phase: 6, num: '26',
@@ -351,6 +488,11 @@ const EVIDENCES = [
     context: 'A imagem do Leão de Judá vem de Gênesis 49:9-10, a bênção profética de Jacó: <em>"Judá é leão filhote... não se arredará o cetro de Judá... até que venha Siló."</em> Na mitologia universal e na teologia bíblica, leão = poder soberano, força irresistível. O Cordeiro sacrificial é a imagem oposta: vítima, submissão voluntária, morte. João Batista havia declarado em João 1:29: <em>"Eis o Cordeiro de Deus, que tira o pecado do mundo"</em> — identificando Jesus com o cordeiro pascal e com o Servo sofredor de Isaías 53:7 (<em>"como cordeiro levado ao matadouro"</em>).',
     logic: 'O paradoxo de Apocalipse 5 é o arremate filosófico de toda a Escritura. A pergunta cósmica que o livro todo responde é: como o Criador desfaz a entrada do mal sem simplesmente aniquilar tudo que criou? A resposta não é força bruta — é obediência voluntária levada ao limite absoluto. Gênesis 3:15 havia estabelecido a lógica com precisão cirúrgica: <em>"tu lhe ferirás o calcanhar / esta te ferirá a cabeça."</em> O mal atinge o calcanhar — derrota aparente, morte do Messias. O Messias atinge a cabeça — destruição definitiva do mal. A vitória é conquistada <em>através</em> do ponto de derrota aparente, não apesar dele. Filipenses 2:8-9: <em>"Sendo obediente até a morte, mesmo a morte de cruz. Por isso Deus o exaltou soberanamente."</em> O mecanismo é: a submissão voluntária do Justo é o único evento que pode satisfazer simultaneamente a justiça (punição do culpado) e a misericórdia (perdão do culpado) — porque o Justo absorve a penalidade em lugar do culpado. O Leão vence como Cordeiro. O poder supremo se manifesta como fragilidade voluntária. E o livro selado que nenhum poder cósmico conseguiu abrir — os destinos de toda a criação — só pode ser aberto pela mão que carrega as marcas do Cordeiro. O código-fonte que começou com a assinatura Alef-Tav em Gênesis 1:1 se fecha com o Alfa e o Ômega abrindo o livro da história em Apocalipse 5.',
     related: [1, 2, 25],
+    refs: [
+      'Beale, G.K. The Book of Revelation (NIGTC). Eerdmans, 1999',
+      'Motyer, J.A. The Prophecy of Isaiah. IVP, 1993',
+      'Kidner, D. Genesis: An Introduction and Commentary (TOTC). IVP, 1967',
+    ],
   },
   {
     id: 27, phase: 1, num: '27',
@@ -362,6 +504,11 @@ const EVIDENCES = [
     context: 'A gematria — o sistema numérico-alfabético hebraico em que cada letra possui valor fixo — era instrumento literário estabelecido entre escribas do Antigo Oriente Próximo muito antes de se tornar ferramenta exegética formal. O autor bíblico emprega o número 318 sabendo que o leitor educado, ao calcular o nome de Eliezer, reconheceria o trocadilho: o exército de Abraão era, em termos simbólicos, <em>Eliezer multiplicado</em>. O <strong>Midrash Rabbah</strong> (<em>Bereshit Rabbah</em> 43:2) registra explicitamente essa leitura: "Rabi Ammi disse — Eliezer sozinho era o equivalente de todos os 318." A <strong>Epístola de Barnabé</strong> (9:8), texto cristão do séc. II d.C., cita o mesmo dado como evidência de que o número 318 possuía carga simbólica pré-estabelecida na tradição judaica — tradição judaica e cristã primitiva convergindo sobre o mesmo trocadilho de forma independente.',
     logic: 'O argumento é de coerência literária interna, não de numerologia mística. O autor de Gênesis emprega a mesma técnica que os escribas do Antigo Oriente Próximo usavam para sinalizar ao leitor letrado que números específicos carregavam significado além do valor facial. A diferença aqui é que o "código" se resolve <em>dentro do próprio texto</em>: o número 318 de Gênesis 14 é decifrado pelo nome Eliezer de Gênesis 15 — a chave está na página seguinte, não em fontes externas. O Midrash e os Pais da Igreja chegaram ao mesmo trocadilho de forma independente, o que confirma que a leitura não é projeção posterior: ela estava no texto esperando quem conhecesse o alfabeto numérico hebraico. Para o leitor moderno sem hebraico, 318 é um número arbitrário. Para o leitor original, era o nome do general.',
     related: [2, 3, 5],
+    refs: [
+      'Midrash Rabbah, Bereshit Rabbah 43:2',
+      'Epístola de Barnabé, 9:8 (~100 d.C.)',
+      'Munk, M.L. The Wisdom in the Hebrew Alphabet. Mesorah, 1983',
+    ],
   },
   {
     id: 28, phase: 3, num: '28',
@@ -373,6 +520,12 @@ const EVIDENCES = [
     context: 'Os Manuscritos do Mar Morto representam a maior descoberta para a crítica textual bíblica do séc. XX. São mais de 1.000 anos mais antigos que os manuscritos massoréticos previamente conhecidos. A convergência independente entre a <strong>Septuaginta</strong> (tradição alexandrina, séc. III a.C.) e o fragmento <strong>11QPsa</strong> de Qumran (tradição palestinense, séc. I) sobre o mesmo versículo "Nun" estabelece com alta probabilidade que: (1) o versículo existiu no original; (2) foi omitido acidentalmente em algum ponto da transmissão massorética — provavelmente por <em>parablepsis</em> (salto visual do escriba), pois o v.13 e o v.14 massorético ambos contêm construções iniciadas por נ; (3) a lacuna era <em>detectável matematicamente</em> pelo design acróstico — 22 letras exige 22 versículos.',
     logic: 'O caso do Salmo 145 é um argumento pela confiabilidade do processo de transmissão textual bíblica — mas de forma mais sofisticada que a apologia ingênua. O argumento preciso é: (1) um escriba cometeu um erro de cópia — isso é esperado em qualquer corpus copiado à mão por milênios; (2) a estrutura literária intencionalmente complexa do salmo (o acróstico de 22 letras) tornou o erro <em>matematicamente detectável</em> séculos depois; (3) textos independentes e mais antigos (LXX e Qumran) confirmaram a versão original. O próprio design elaborado do autor funcionou como <strong>sistema de detecção de erros</strong> — análogo à paridade em computação. A Bíblia não é confiável apesar de sua complexidade literária, mas <em>por causa</em> dela. O "erro bíblico" apontado pelos céticos era o ponto exato onde a arqueologia e a filologia se uniram para restaurar o texto original. O versículo recuperado completa a sequência: "Fiel é o SENHOR em todas as suas palavras" (v.Nun) → "Sustenta o SENHOR a todos os que caem" (v.14 massorético).',
     related: [9, 14, 25],
+    refs: [
+      'Sanders, J.A. The Psalms Scroll of Qumrân Cave 11 (11QPsa). Oxford, 1965',
+      'Tov, E. Textual Criticism of the Hebrew Bible. Fortress Press, 1992',
+      'Septuaginta (LXX), Salmo 144 [145], ~250 a.C.',
+      'Metzger, B.M. Manuscripts of the Greek Bible. OUP, 1981',
+    ],
   },
   {
     id: 29, phase: 5, num: '29',
@@ -384,6 +537,12 @@ const EVIDENCES = [
     context: '<strong>Nota textual crítica:</strong> A perícope de Jo 7:53–8:11 está ausente dos manuscritos gregos mais antigos — P66 (~200 d.C.), P75 (~200 d.C.), Sinaiticus (א) e Vaticanus (B). O papiro P66 pula diretamente de 7:52 para 8:12. A maioria dos críticos textuais modernos, incluindo Bruce Metzger (<em>A Textual Commentary on the Greek New Testament</em>), considera o episódio uma tradição oral histórica autêntica inserida posteriormente no texto canônico — Metzger reconhece seu caráter histórico mas questiona sua posição original no Evangelho de João. A argumentação desta evidência não depende da posição canônica: a coerência jurídico-teológica do ato de Jesus com o ritual da Sotah é historicamente plausível independentemente do debate textual. O ritual da <em>Sotah</em> é um dos procedimentos legais mais enigmáticos do Pentateuco (Números 5:11-31) e o único em que o próprio nome de Deus é deliberadamente apagado — as maldições escritas são dissolvidas na água amarga que a mulher bebe. Se culpada, a maldição opera no corpo; se inocente, ela é purificada e abençoada. O cenário de João 8 mapeia sobre o ritual com precisão de protocolo: (1) <strong>suspeita de adultério</strong> — exatamente o contexto legal da Sotah; (2) <strong>ato sacerdotal de escrever no pó do chão</strong> do Templo — equivalente ao pó do Tabernáculo prescrito em Números 5; (3) <strong>ausência de testemunhas adequadas</strong> — o processo da Sotah exigia testemunhas; ao se retirarem um por um, eles invalidaram o próprio processo legal que iniciaram. O Talmude (<em>Sotah</em> 9b) registra que o ritual foi abolido quando os adultérios se multiplicaram no período do Segundo Templo — precisamente o contexto de João 8.',
     logic: 'Jesus não está "comprando tempo" escrevendo na terra — está <em>performando o ritual prescrito</em> para aquele caso específico, com as modificações que somente o verdadeiro Sumo Sacerdote poderia fazer. A estrutura completa: (1) <strong>O ato sacerdotal</strong> — escrever no pó do chão do Templo é exatamente o que o sumo sacerdote fazia na Sotah; Jesus assume a prerrogativa sacerdotal sem ser levita, qualificando-se pela ordem de Melquisedeque (Hebreus 7, Evidência 03); (2) <strong>Jeremias 17:13</strong> fornece a chave explícita — "seus nomes serão escritos no pó" refere-se aos que abandonaram a fonte de água viva; os acusadores que saem um por um estão cumprindo essa profecia sobre si mesmos no momento em que a rejeitam; (3) <strong>A dissolução da maldição</strong> — na Sotah, as maldições eram apagadas e bebidas pela acusada; Jesus não condena a mulher e dissolve o processo legal. Mas a Lei não foi anulada: Ele mesmo beberia o cálice das maldições na Cruz (Gálatas 3:13 — "Cristo nos resgatou da maldição da Lei, fazendo-se maldição em nosso lugar"). O perdão de João 8 é possível porque João 19 já estava no horizonte. A teologia de Jesus não está no que Ele escreveu — está no <em>ato</em> de escrever no pó do Templo e no que fez a seguir.',
     related: [6, 8, 13],
+    refs: [
+      'Mishná, Sotah 1:1-9:15',
+      'Números 5:11-31 (Torah — ritual da Sotah)',
+      'Derrett, J.D.M. Law in the New Testament. Darton, Longman & Todd, 1970',
+      'Metzger, B.M. A Textual Commentary on the Greek New Testament. UBS, 1994',
+    ],
   },
   {
     id: 30, phase: 5, num: '30',
@@ -395,6 +554,12 @@ const EVIDENCES = [
     context: 'O retrocálculo de eclipses históricos é astronomia de precisão, não especulação. A mecânica orbital é determinística: conhecendo as posições atuais da Terra, Lua e Sol, é possível calcular sua configuração para qualquer data histórica com margem de erro de poucos segundos. Os algoritmos de Espenak e Meeus são o padrão acadêmico internacional para esse fim. A data de 3 de abril de 33 d.C. para a crucificação é defendida pela maioria dos historiadores e astrofísicos que estudaram a questão — incluindo Colin Humphreys e W.G. Waddington (<em>Nature</em>, vol. 306, 1983) e o astrofísico John Pratt. A distinção técnica é crucial: um eclipse <em>solar</em> requer Lua Nova — <em>impossível</em> durante a Páscoa judaica de 14 Nisan, que sempre ocorre em Lua Cheia. Um eclipse <em>lunar</em>, ao contrário, requer exatamente Lua Cheia — e pode ocorrer em 14 Nisan. Isso é precisamente o argumento de Júlio Africano contra Talo, que tentou explicar as trevas da tarde como eclipse solar (ver Evidência 22).',
     logic: 'A convergência astronômica não prova a ressurreição — mas confirma o contexto histórico com independência total da tradição religiosa. Os quatro pontos do argumento: (1) <strong>Data precisa e independente</strong> — 14 Nisan em ano preciso corresponde a 3 de abril de 33 d.C. por cálculo calendárico independente da tradição cristã; (2) <strong>Eclipse calculável</strong> — o eclipse lunar parcial daquela tarde é resultado de mecânica newtoniana, verificável por qualquer astrônomo com software de retrocálculo; (3) <strong>Visibilidade confirmada</strong> — nascer da lua parcialmente eclipsada = lua avermelhada visível no horizonte leste de Jerusalém enquanto a população retornava do Gólgota (a oeste da cidade), exatamente às 18h20; (4) <strong>Audiência presente</strong> — Pedro cita a "lua em sangue" 50 dias depois diante de quem estivera naquela tarde em Jerusalém; se o fenômeno não tivesse ocorrido, ele seria refutado imediatamente. A astronomia não é evidência de divindade. É a <em>assinatura física</em> que confirma que os eventos ocorreram na data e local que os textos afirmam — e que a multidão presente os interpretou como cumprimento de profecia imediatamente, não como elaboração posterior.',
     related: [22, 21, 7],
+    refs: [
+      'Espenak, F. Fifty Year Canon of Lunar Eclipses: 1986-2035. NASA RP-1216, 1989',
+      'Humphreys, C.J.; Waddington, W.G. Dating the Crucifixion. Nature, vol. 306, pp. 743-746, 1983',
+      'Humphreys, C.J. The Mystery of the Last Supper. Cambridge University Press, 2011',
+      'Pratt, J.P. Newton's Date for the Crucifixion. QJRAS, vol. 32, 1991',
+    ],
   },
 ];
 
@@ -628,6 +793,14 @@ function openModal(id) {
       <span class="modal-related-label">Evidências Relacionadas</span>
       <div class="modal-related-chips">${relatedHtml}</div>
     </div>` : ''}
+
+    ${ev.refs && ev.refs.length ? `
+    <details class="modal-refs-block">
+      <summary class="modal-refs-summary">Referências Bibliográficas</summary>
+      <ul class="modal-refs-list">
+        ${ev.refs.map(r => `<li>${r}</li>`).join('\n        ')}
+      </ul>
+    </details>` : ''}
   `;
 
   document.getElementById('modal-overlay').classList.add('open');

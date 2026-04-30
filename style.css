@@ -1216,3 +1216,52 @@ body {
   .dashboard-grid { grid-template-columns: 1fr; }
   .widget-books { grid-column: 1; }
 }
+
+/* =============================================
+   MODAL — REFERÊNCIAS BIBLIOGRÁFICAS
+   ============================================= */
+.modal-refs-block {
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 1.25rem;
+}
+
+.modal-refs-summary {
+  cursor: pointer;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  list-style: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.modal-refs-summary::-webkit-details-marker { display: none; }
+.modal-refs-summary::before {
+  content: '›';
+  display: inline-block;
+  transition: transform .2s;
+  font-size: 1rem;
+  line-height: 1;
+}
+.modal-refs-block[open] .modal-refs-summary::before {
+  transform: rotate(90deg);
+}
+.modal-refs-summary:hover { color: rgba(255,255,255,0.55); }
+
+.modal-refs-list {
+  margin: .85rem 0 0 0;
+  padding: 0 0 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+.modal-refs-list li {
+  font-size: .8rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.5;
+  font-style: italic;
+}
