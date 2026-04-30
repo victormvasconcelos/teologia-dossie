@@ -558,7 +558,7 @@ const EVIDENCES = [
       'Espenak, F. Fifty Year Canon of Lunar Eclipses: 1986-2035. NASA RP-1216, 1989',
       'Humphreys, C.J.; Waddington, W.G. Dating the Crucifixion. Nature, vol. 306, pp. 743-746, 1983',
       'Humphreys, C.J. The Mystery of the Last Supper. Cambridge University Press, 2011',
-      'Pratt, J.P. Newton's Date for the Crucifixion. QJRAS, vol. 32, 1991',
+      'Pratt, J.P. Newton\'s Date for the Crucifixion. QJRAS, vol. 32, 1991',
     ],
   },
 ];
