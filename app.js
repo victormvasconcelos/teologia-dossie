@@ -730,6 +730,78 @@ const CURIOSITIES = [
     tag: 'Curiosidade',
     body: 'Ester é um dos dois livros do AT que <strong>nunca mencionam o nome de Deus</strong> (o outro é Cântico dos Cânticos). Ainda assim, a presença divina é implícita na providência por trás de cada evento. Tanto que foi debatido pelos rabinos se deveria entrar no cânon.',
   },
+  {
+    id: 13,
+    title: '"Não temas" — 365 vezes, uma por dia',
+    tag: 'Números',
+    body: 'A frase "não temas" (ou "não temais") aparece <strong>365 vezes</strong> na Bíblia — exatamente o número de dias de um ano. Como se houvesse uma ordem divina para cada dia do calendário: um lembrete diário de que o medo não é a resposta apropriada para quem crê.',
+  },
+  {
+    id: 14,
+    title: 'O número 40 — padrão de provação',
+    tag: 'Números',
+    body: 'O número 40 marca cada grande período de provação: dilúvio por <strong>40 dias e noites</strong>, Moisés no Sinai por 40 dias, Israel no deserto por 40 anos, Elias caminhou 40 dias até o Horebe, Jesus jejuou 40 dias no deserto. Em hebraico, 40 (מ, <em>mem</em>) simboliza transformação e nascimento.',
+  },
+  {
+    id: 15,
+    title: '"Aleluia" — a palavra que ninguém traduz',
+    tag: 'Linguística',
+    body: '<strong>הַלְלוּיָהּ (Halleluyah)</strong> é hebraico puro: <em>hallelu</em> ("louvai", plural imperativo) + <em>Yah</em> (forma abreviada de YHWH). É a única palavra hebraica usada sem tradução em praticamente todos os idiomas do mundo — do inglês ao mandarim, do árabe ao suaíli.',
+  },
+  {
+    id: 16,
+    title: 'O Salmo 119 — o acr óstico perfeito',
+    tag: 'Arquitetura',
+    body: 'Com <strong>176 versículos</strong>, o Salmo 119 é o capítulo mais longo da Bíblia. Está dividido em 22 seções de 8 versículos cada — uma para cada letra do alfabeto hebraico em ordem. Cada versículo de uma seção começa com aquela letra. É poesia mnemônica de precisão matemática.',
+  },
+  {
+    id: 17,
+    title: 'Moisés descreveu a própria morte',
+    tag: 'Curiosidade',
+    body: 'Deuteronômio 34 descreve a morte e o sepultamento de Moisés em detalhes — inclusive que "ninguém conhece o seu sepulcro até hoje." A tradição judaica atribui esses versículos finais a <strong>Josué</strong>, discípulo de Moisés, que teria completado o livro após a morte do mestre.',
+  },
+  {
+    id: 18,
+    title: 'Jó pode ser o livro mais antigo da Bíblia',
+    tag: 'Manuscritos',
+    body: 'Jó não menciona a Lei, o Êxodo, Israel ou qualquer patriarca posterior a Abraão. Seu contexto (terra de Uz, riqueza medida em gado, Jó como sacerdote da própria família) é pré-mosaico. Muitos estudiosos datam sua composição em <strong>~2.000–1.800 a.C.</strong> — anterior ao Pentateuco.',
+  },
+  {
+    id: 19,
+    title: 'Jesus em grego = 888',
+    tag: 'Números',
+    body: 'O nome <strong>ΙΗΣΟΥΣ</strong> (Iésous) em gematria grega soma <strong>888</strong>. Oito é o número associado à ressurreição no mundo judaico (o 8º dia = além da semana criacional = novo começo). 888 = 8 × 111 = 8 × 3 × 37. O nome de Nero César em hebraico (נרון קסר) soma 666.',
+  },
+  {
+    id: 20,
+    title: 'A Bíblia mais vendida e mais traduzida',
+    tag: 'Estatística',
+    body: 'A Bíblia é o livro mais vendido da história, com estimativa de <strong>5 a 6 bilhões de cópias</strong> — mais que o segundo colocado por uma margem de 3 a 4 bilhões. É também o mais traduzido: disponível em mais de <strong>3.500 idiomas</strong>, cobrindo mais de 97% da população mundial.',
+  },
+  {
+    id: 21,
+    title: 'O Salmo 22 descreve crucificação — 1.000 anos antes',
+    tag: 'Profecia',
+    body: 'Davi escreveu o Salmo 22 (~1.000 a.C.): <em>"traspassaram minhas mãos e meus pés… repartem entre si minhas vestes, e lançam sortes."</em> A crucificação foi inventada pelos persas ~500 a.C. e adotada pelos romanos ~300 a.C. <strong>Davi não tinha como conhecer esse método</strong> — e ainda assim o descreveu com precisão forense.',
+  },
+  {
+    id: 22,
+    title: 'Salomão: 700 esposas, 300 concubinas',
+    tag: 'Curiosidade',
+    body: '1 Reis 11:3 afirma que Salomão tinha <strong>700 esposas de origem nobre e 300 concubinas</strong>. O texto imediatamente atribui a isso a apostasia de Salomão — as mulheres "desviaram seu coração" para outros deuses. É uma das raras autocríticas brutais de um herói nacional na literatura antiga.',
+  },
+  {
+    id: 23,
+    title: 'A palavra "Bíblia" vem de uma cidade fenícia',
+    tag: 'Linguística',
+    body: '<strong>Bíblia</strong> vem do grego <em>βιβλία</em> (biblia = "livrinhos"), plural de <em>βιβλίον</em> (biblion). Biblion vem de <strong>Byblos</strong> — cidade fenícia (atual Líbano) famosa por exportar papiro para toda a bacia do Mediterrâneo. O material de escrita deu nome ao livro mais importante da civilização ocidental.',
+  },
+  {
+    id: 24,
+    title: 'O nome de Deus escondido em Ester',
+    tag: 'Arquitetura',
+    body: 'Em quatro versículos estratégicos de Ester, as letras iniciais (ou finais) de palavras consecutivas formam o acróstico <strong>יהוה (YHWH)</strong> — o nome divino que não aparece explicitamente no livro. Escribas massoretas sinalizaram esses versículos com letras maiúsculas. A ausência do nome é, ela mesma, uma mensagem codificada.',
+  },
 ];
 
 // =============================================
