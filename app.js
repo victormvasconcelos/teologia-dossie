@@ -838,6 +838,42 @@ const CURIOSITIES = [
     tag: 'Números',
     body: 'Enoque viveu exatamente <strong>365 anos</strong> antes de ser arrebatado sem morrer (Gênesis 5:24) — o mesmo número de dias do ano solar. Entre os patriarcas de vida longa (Matusalém viveu 969), apenas Enoque tem esse número preciso. O detalhe nunca é explicado no texto — e raramente é casual na narrativa bíblica.',
   },
+  {
+    id: 31,
+    title: '"Ele suspende a terra sobre o nada" — Jó 26:7',
+    tag: 'Ciência',
+    body: 'Escrito ~2.000 a.C., Jó 26:7 afirma que Deus <strong>"suspende a terra sobre o nada"</strong>. É a única afirmação do mundo antigo de que a terra flutua no vácuo. Todas as outras cosmologias colocavam a terra sobre pilares, tartarugas, elefantes ou oceanos. Jó descreve gravidade orbital 3.500 anos antes de Newton.',
+  },
+  {
+    id: 32,
+    title: 'Isaías 40:22 — "o círculo da terra" em 700 a.C.',
+    tag: 'Ciência',
+    body: 'Isaías 40:22 (~700 a.C.) descreve Deus "assentado sobre o <strong>círculo (חוּג, chug) da terra</strong>" — a palavra hebraica significa esfera ou arco. Quando a maioria das culturas vizinhas ensinava terra plana, o texto hebraico já usava o termo preciso para curvatura esférica.',
+  },
+  {
+    id: 33,
+    title: 'Levítico inventou a quarentena 3.500 anos antes de Semmelweis',
+    tag: 'Medicina',
+    body: 'Levítico 13–15 detalha: isolamento de doentes infectados, inspeção por sacerdotes (médicos públicos), lavagem de roupas, destruição de objetos contaminados e quarentena de 7 dias. Semmelweis descobriu que lavar as mãos salva vidas em <strong>1847</strong>. Moisés já prescrevia isso em <strong>~1.400 a.C.</strong>',
+  },
+  {
+    id: 34,
+    title: 'O ciclo hidrológico completo — Eclesiastes e Amós',
+    tag: 'Ciência',
+    body: 'Eclesiastes 1:6-7 descreve ventos circulares e rios que correm ao mar sem enchê-lo, "voltando ao lugar de onde partiram." Amós 5:8 fala de Deus "chamando as águas do mar e derramando-as sobre a face da terra." O ciclo hidrológico completo (evaporação → nuvens → chuva → rios → mar) foi descrito com precisão ~900 a.C.',
+  },
+  {
+    id: 35,
+    title: 'A probabilidade matemática das profecias messiânicas',
+    tag: 'Estatística',
+    body: 'O matemático Peter Stoner calculou a probabilidade de <strong>apenas 8 profecias</strong> do AT serem cumpridas por acaso em uma única pessoa: <strong>1 em 10¹⁷</strong> (1 seguido de 17 zeros). Para visualizar: é como cobrir o estado de Texas com moedas de 50 centavos até 60 cm de altura, marcar uma aleatoriamente e pedir para um cego encontrá-la na primeira tentativa.',
+  },
+  {
+    id: 36,
+    title: 'Jó 38:31 — as Plêiades presas e Órion se dispersando',
+    tag: 'Ciência',
+    body: 'Deus pergunta a Jó: <em>"Podes tu prender os laços das <strong>Plêiades</strong>, ou soltar as cordas de Órion?"</em> (Jó 38:31). A astronomia moderna confirmou: as Plêiades são gravitacionalmente ligadas — um aglomerado preso. Órion é uma constelação ilusória cujas estrelas se dispersam em direções opostas. A diferença física foi escrita ~2.000 a.C.',
+  },
 ];
 
 // =============================================
