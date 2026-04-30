@@ -1016,6 +1016,86 @@ body {
 .ev-card:nth-child(n+11) { animation-delay: 0.22s; }
 
 /* =============================================
+   CURIOSIDADES BÍBLICAS
+   ============================================= */
+.curiosities-section {
+  padding: 6rem 0;
+  border-top: 1px solid rgba(196,169,64,0.12);
+}
+
+.curiosities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+
+.curio-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: border-color var(--transition), background var(--transition), transform var(--transition);
+}
+
+.curio-card:hover {
+  background: var(--card-hover);
+  border-color: rgba(201,168,64,0.3);
+  transform: translateY(-3px);
+}
+
+.curio-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.curio-num {
+  font-family: 'Courier New', monospace;
+  font-size: 0.72rem;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+}
+
+.curio-tag {
+  font-family: 'Courier New', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 0.2rem 0.55rem;
+  border-radius: 20px;
+}
+
+.curio-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.curio-body {
+  font-size: 0.84rem;
+  color: var(--text2);
+  line-height: 1.7;
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .curiosities-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .curiosities-grid { grid-template-columns: 1fr; }
+}
+
+/* =============================================
    MODAL — REFERÊNCIAS BIBLIOGRÁFICAS
    ============================================= */
 .modal-refs-block {

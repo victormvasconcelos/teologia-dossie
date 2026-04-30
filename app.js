@@ -657,6 +657,99 @@ const CHIASM_PAIRS = [
   { gen: 'Éden fechado — querubins guardam', apo: 'Nova Jerusalém — portões nunca fechados' },
 ];
 
+const CURIOSITIES = [
+  {
+    id: 1,
+    title: 'O versículo mais curto da Bíblia',
+    tag: 'Linguística',
+    body: 'Em grego, João 11:35 tem apenas duas palavras: <strong>ἐδάκρυσεν ὁ Ἰησοῦς</strong> — "Jesus chorou." É o versículo mais curto do Novo Testamento e um dos mais teologicamente densos: Deus encarnado chora diante da morte de um amigo, mesmo sabendo que vai ressuscitá-lo.',
+  },
+  {
+    id: 2,
+    title: 'A Bíblia não menciona maçã',
+    tag: 'Mitos & Fatos',
+    body: 'Gênesis 3 usa apenas <strong>פְּרִי (peri)</strong> — "fruto", sem especificar qual. A tradição da maçã veio da Vulgata latina de Jerônimo (~400 d.C.), onde o latim <em>malum</em> significa tanto "maçã" quanto "mal". A iconografia medieval cristalizou o erro.',
+  },
+  {
+    id: 3,
+    title: 'O hebraico original não tinha vogais',
+    tag: 'Manuscritos',
+    body: 'O hebraico bíblico original era escrito somente com consoantes. O sistema de pontuação vocálica (<strong>Niqqud</strong>) foi desenvolvido pelos Massoretas entre os séculos VI–X d.C. para preservar a pronúncia correta. Leitores do séc. I liam o texto consonantal de memória.',
+  },
+  {
+    id: 4,
+    title: 'O Tetragrama aparece 6.828 vezes',
+    tag: 'Números',
+    body: 'O nome divino <strong>יהוה (YHWH)</strong> aparece 6.828 vezes no Antigo Testamento — mais que qualquer outro nome ou título. É tão sagrado que judeus substituem pela palavra <em>HaShem</em> ("O Nome") na leitura oral, e a pronúncia original foi intencionalmente perdida.',
+  },
+  {
+    id: 5,
+    title: '1.500 anos, 40 autores, 3 continentes',
+    tag: 'Estatística',
+    body: 'A Bíblia foi escrita ao longo de ~1.500 anos por mais de 40 autores: reis, pescadores, médicos, profetas e coletores de impostos. Em 3 idiomas (hebraico, aramaico, grego koiné), em 3 continentes (Ásia, África, Europa), com unidade temática do primeiro ao último livro.',
+  },
+  {
+    id: 6,
+    title: 'A circuncisão no 8º dia — e a coagulação',
+    tag: 'Medicina',
+    body: 'Gênesis 17:12 ordena a circuncisão no <strong>8º dia de vida</strong>. A medicina moderna descobriu que a vitamina K (essencial para coagulação) e os níveis de protrombina atingem seus picos máximos exatamente no 8º dia de vida de um recém-nascido — o único dia em que o bebê coagula melhor que o adulto.',
+  },
+  {
+    id: 7,
+    title: 'Os Manuscritos do Mar Morto',
+    tag: 'Arqueologia',
+    body: 'Descobertos em 1947 em Qumran, os Manuscritos do Mar Morto contêm fragmentos de <strong>todos os livros do AT exceto Ester</strong>. O rolo completo de Isaías (~125 a.C.) é 1.000 anos mais antigo que qualquer cópia conhecida antes da descoberta — e o texto é 95% idêntico ao que usamos hoje.',
+  },
+  {
+    id: 8,
+    title: 'O nome mais longo da Bíblia',
+    tag: 'Curiosidade',
+    body: '<strong>Maher-Shalal-Hash-Baz</strong> (Isaías 8:1) — filho do profeta Isaías, com 18 letras, significando "Rápido é o saque, veloz é o despojo." Foi dado como sinal profético da queda da Síria e Israel diante da Assíria.',
+  },
+  {
+    id: 9,
+    title: 'O versículo central aponta para confiança',
+    tag: 'Arquitetura',
+    body: 'O versículo central da Bíblia Protestante (1.189 capítulos, 31.102 versículos) é <strong>Salmos 118:8</strong>: <em>"É melhor refugiar-se no SENHOR do que confiar em príncipes."</em> O Salmo 118 é também o mais citado no Novo Testamento.',
+  },
+  {
+    id: 10,
+    title: 'A profecia de Tiro verificável por satélite',
+    tag: 'Profecia',
+    body: 'Ezequiel 26 (~590 a.C.) profetizou que Tiro seria destruída e suas pedras jogadas ao mar. Em 332 a.C., Alexandre Magno destruiu a cidade continental e <strong>literalmente jogou as pedras ao mar</strong> para construir uma ponte de 800 metros até a ilha. A "ilha" de Tiro ainda existe — sobre as ruínas subaquáticas.',
+  },
+  {
+    id: 11,
+    title: 'O número 7 como assinatura estrutural',
+    tag: 'Números',
+    body: 'O número 7 aparece <strong>735 vezes</strong> na Bíblia e estrutura praticamente todos os livros: Gênesis 1 tem 7 dias; Apocalipse tem 7 igrejas, 7 selos, 7 trombetas, 7 taças. A palavra "criou" em Gênesis 1 aparece 7 vezes. Gênesis 1:1 tem 7 palavras e 28 (4×7) letras.',
+  },
+  {
+    id: 12,
+    title: 'O livro de Ester não menciona Deus',
+    tag: 'Curiosidade',
+    body: 'Ester é um dos dois livros do AT que <strong>nunca mencionam o nome de Deus</strong> (o outro é Cântico dos Cânticos). Ainda assim, a presença divina é implícita na providência por trás de cada evento. Tanto que foi debatido pelos rabinos se deveria entrar no cânon.',
+  },
+];
+
+// =============================================
+// RENDER CURIOSITIES
+// =============================================
+function renderCuriosities() {
+  const grid = document.getElementById('curiosities-grid');
+  if (!grid) return;
+  grid.innerHTML = CURIOSITIES.map(c => `
+    <div class="curio-card">
+      <div class="curio-top">
+        <span class="curio-num">${String(c.id).padStart(2,'0')}</span>
+        <span class="curio-tag">${c.tag}</span>
+      </div>
+      <h3 class="curio-title">${c.title}</h3>
+      <p class="curio-body">${c.body}</p>
+    </div>
+  `).join('');
+}
+
 // =============================================
 // PHASE COLORS
 // =============================================
@@ -889,6 +982,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCards();
   renderGlossary('hebraico');
   renderChiasm();
+  renderCuriosities();
   initStickyNav();
 
   // Phase nav buttons
