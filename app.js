@@ -766,6 +766,48 @@ const CURIOSITIES = [
     tag: 'Astronomia',
     body: 'Jeremias 33:22 (~600 a.C.) compara os descendentes ao número das <strong>"estrelas do céu" — incontáveis</strong>. Hiparco catalogou ~1.022 estrelas visíveis a olho nu. Tycho Brahe chegou a 777. O número real estimado de estrelas no universo observável: ~10²⁴ — mais que grãos de areia em toda a Terra. A hipérbole bíblica é literalmente verdadeira.',
   },
+  {
+    id: 19,
+    title: 'A anomalia bíblica — nenhum texto sagrado contemporâneo faz isso',
+    tag: 'Comparativa',
+    body: 'Os textos sagrados escritos na mesma época que a Bíblia descrevem: terra plana sobre pilares de pedra (Enuma Elish babilônico), terra flutuando em oceano primordial (sumérios), céu como cúpula sólida. Nenhum contém terra esférica, terra suspensa no vácuo ou universo em expansão. A Bíblia contém <strong>todos os três</strong> — Isaías 40:22, Jó 26:7 e Jó 9:8 — escritos entre 2.000 e 700 a.C. A anomalia é documentada e não tem paralelo na literatura antiga do Oriente Próximo.',
+  },
+  {
+    id: 20,
+    title: 'Jó 28:25 — "dar peso ao vento" (pressão atmosférica)',
+    tag: 'Física Atmosférica',
+    body: 'Jó 28:25 afirma que Deus "deu <strong>peso ao vento</strong>" (לָרוּחַ מִשְׁקָל — laruah mishqal: literalmente peso/massa ao ar). O conceito de que o ar tem massa mensurável era desconhecido no mundo antigo — Aristóteles ensinava que o ar era leve por natureza. Evangelista Torricelli provou em <strong>1643</strong> que o ar tem peso ao inventar o barômetro. A pressão atmosférica ao nível do mar equivale a ~1 kg por cm² de superfície. Jó escreveu isso ~2.000 a.C.',
+  },
+  {
+    id: 21,
+    title: 'Jó 38:16 — "nascentes do mar" descobertas em 1977',
+    tag: 'Oceanografia',
+    body: 'Deus pergunta a Jó: <em>"Chegaste às <strong>nascentes do mar</strong>?"</em> (Jó 38:16). A existência de fontes hidrotermais no fundo oceânico foi descoberta em fevereiro de <strong>1977</strong> pelo submersível Alvin, na Dorsal das Galápagos. Até então, o fundo do mar era considerado geologicamente inerte e sem vida complexa. As fontes sustentam ecossistemas inteiros baseados em quimiossíntese — sem luz solar. O texto usa a palavra hebraica נֵבֶךְ (nebek), hapax legomenon: termo raro para fontes internas.',
+  },
+  {
+    id: 22,
+    title: 'Deuteronômio 23:12-13 — saneamento 3.400 anos antes de Pasteur',
+    tag: 'Saúde Pública',
+    body: 'Deuteronômio 23:12-13 ordena: enterrar dejetos <strong>fora do acampamento</strong> e cobri-los com terra. A teoria dos germes foi estabelecida por Pasteur em 1861. Enquanto isso, doenças entéricas (tifoide, cólera, disenteria) matavam mais soldados que batalhas em toda guerra até o séc. XX — o Exército Britânico perdeu mais homens na Crimeia (1854) para doença do que para combate. O protocolo hebraico de saneamento existia 3.400 anos antes de qualquer outro exército adotá-lo sistematicamente.',
+  },
+  {
+    id: 23,
+    title: 'Levítico 11 — animais proibidos e o mapa do risco patogênico',
+    tag: 'Microbiologia',
+    body: 'Levítico 11 proíbe: porco (hospedeiro de <em>Trichinella spiralis</em>, <em>Taenia solium</em>, <em>Yersinia</em>), mariscos (concentram <em>Vibrio vulnificus</em>, toxinas paralisantes, norovírus), aves carniceiras (<em>Salmonella</em>, <em>Campylobacter</em>). Sem refrigeração ou microbiologia, a lista hebraica corresponde com precisão surpreendente ao mapa moderno de <strong>alto risco patogênico</strong>. A ciência alimentar moderna classifica esses mesmos grupos como os de maior risco de intoxicação sob condições primitivas.',
+  },
+  {
+    id: 24,
+    title: 'Provérbios 17:22 — psiconeuroimunologia em 900 a.C.',
+    tag: 'Neurociência',
+    body: 'Provérbios 17:22: <em>"O coração alegre é um bom remédio, mas o <strong>espírito abatido seca os ossos</strong>."</em> A psiconeuroimunologia (PNI) — ciência das relações entre estado emocional e sistema imune — foi fundada nos anos 1980. Pesquisas confirmam: o cortisol crônico (estresse) <strong>suprime a medula óssea</strong> (produtora de células imunes), reduz células NK e prejudica cicatrização. "Seca os ossos" é biologicamente preciso: depressão crônica reduz densidade óssea e produção medular. Salomão descreveu o mecanismo 2.900 anos antes.',
+  },
+  {
+    id: 25,
+    title: 'Salmo 102:26 — o universo se desgasta (2ª lei da termodinâmica)',
+    tag: 'Termodinâmica',
+    body: 'Salmo 102:26: <em>"Todos eles [os céus] se <strong>gastarão como um vestido</strong>; como roupa os trocarás, e serão mudados."</em> A segunda lei da termodinâmica — a entropia do universo aumenta irreversivelmente, toda energia ordenada degrada em desordem — foi formulada por Lord Kelvin em <strong>1851</strong> e matematizada por Clausius em 1865. O universo está literalmente "se desgastando": estrelas se apagam, buracos negros evaporam, energia útil diminui. Hebreus 1:11 cita este versículo como descrição de realidade física. O Salmo é de ~1.000 a.C.',
+  },
 ];
 
 // =============================================
