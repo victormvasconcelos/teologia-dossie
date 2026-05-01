@@ -808,6 +808,12 @@ const CURIOSITIES = [
     tag: 'Termodinâmica',
     body: 'Salmo 102:26: <em>"Todos eles [os céus] se <strong>gastarão como um vestido</strong>; como roupa os trocarás, e serão mudados."</em> A segunda lei da termodinâmica — a entropia do universo aumenta irreversivelmente, toda energia ordenada degrada em desordem — foi formulada por Lord Kelvin em <strong>1851</strong> e matematizada por Clausius em 1865. O universo está literalmente "se desgastando": estrelas se apagam, buracos negros evaporam, energia útil diminui. Hebreus 1:11 cita este versículo como descrição de realidade física. O Salmo é de ~1.000 a.C.',
   },
+  {
+    id: 26,
+    title: 'Theo Suassuna Vasconcelos — leu a Bíblia inteira aos 9 anos',
+    tag: 'Criança Prodígio',
+    body: '<strong>Theo Suassuna Vasconcelos</strong> é uma criança super inteligente que leu a Bíblia toda aos 9 anos — todos os 66 livros, do Gênesis ao Apocalipse. Uma conquista extraordinária que pouquíssimos adultos alcançam. Ele é uma criança maravilhosa.',
+  },
 ];
 
 // =============================================
